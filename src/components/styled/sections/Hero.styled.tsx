@@ -16,10 +16,22 @@ export const HeroTextContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   margin-left: 2rem;
-  gap: .5rem;
+  gap: .25rem;
 `;
-export const HeroName = styled.h1``;
-export const HeroTitle = styled.h2``;
+export const HeroName = styled.h1`
+  font-size: 3rem;
+  color: #121212;
+  line-height: .9em;
+`;
+export const Name = styled.span`
+  color: #ffeb3b;
+
+`;
+export const HeroTitle = styled.h2`
+ font-size: 1.25rem;
+ font-weight: 500;
+ color
+`;
 
 // the right image section of hero
 export const HeroImageContainer = styled.div`
