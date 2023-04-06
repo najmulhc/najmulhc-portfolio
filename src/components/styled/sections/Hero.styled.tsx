@@ -26,7 +26,7 @@ export const HeroTextContainer = styled.div`
     width: 90%;
     align-items: center;
     margin-left: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;n
   }
 `;
 export const HeroName = styled.h1`
@@ -46,7 +46,6 @@ export const HeroTitle = styled.h2`
   font-weight: 500;
   @media only screen and (max-width: 767px) {
     text-align: center;
-    
   }
 `;
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
- 
 
 export const Card = styled.div`
   background: rgba(255, 255, 255, 0.36);
@@ -8,6 +7,7 @@ export const Card = styled.div`
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.44);
-  display: inline-block; 
-   
+  display: inline-block;
+  z-index: 10;
+
 `;

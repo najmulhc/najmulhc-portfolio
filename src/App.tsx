@@ -1,12 +1,27 @@
 import Hero from "./components/sections/Hero";
 import Navbar from "./components/sections/Navbar";
-import { Global } from "./components/styled/Global.styled";
+import {
+  Background,
+  BackgroundLogo,
+  Content,
+  Global,
+} from "./components/styled/Global.styled";
+import logo from "/log.svg";
 
 const App: React.FC = () => {
   return (
     <Global>
-      <Navbar />
-      <Hero />
+      <Background>
+        <BackgroundLogo
+          src={logo}
+          title="Logo of @najmulhc"
+          alt="logo of @najmulhc"
+        />
+      </Background>
+      <Content>
+        <Navbar />
+        <Hero />
+      </Content>
     </Global>
   );
 };

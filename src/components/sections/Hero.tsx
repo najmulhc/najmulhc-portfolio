@@ -18,7 +18,7 @@ const Hero = () => {
           Hi, I am <Name>Najmul Huda</Name>
         </HeroName>
         <HeroTitle style={{ fontWeight: 400 }}>
-          I am a{" "}
+          I am a 
           <span style={{ fontWeight: 500, color: "#eab308" }}>
             Meta certified professional frontend web developer.
           </span>{" "}
