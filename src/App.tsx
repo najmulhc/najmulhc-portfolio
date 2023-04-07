@@ -1,6 +1,11 @@
+import About from "./components/sections/About";
+import Certification from "./components/sections/Certification";
+import Education from "./components/sections/Education";
 import Footer from "./components/sections/Footer";
 import Hero from "./components/sections/Hero";
 import Navbar from "./components/sections/Navbar";
+import Projects from "./components/sections/Projects";
+import TechStack from "./components/sections/TechStack";
 import {
   Background,
   BackgroundLogo,
@@ -22,7 +27,12 @@ const App: React.FC = () => {
       <Content>
         <Navbar />
         <Hero />
-        <Footer/>
+        <About />
+        <TechStack />
+        <Education/>
+        <Projects/>
+        <Certification/>
+        <Footer />
       </Content>
     </Global>
   );

@@ -9,5 +9,6 @@ export const Card = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.63);
   display: inline-block;
   z-index: 10;
-
 `;
+
+
