@@ -11,7 +11,7 @@ export const NavContainer = styled.main`
 export const LogoContainer = styled(Card)`
   display: flex;
   justify-content: center;
-  alignt-items: center;
+  align-items: center;
   flex: 0 0 auto;
   padding: 0.5rem;
 `;

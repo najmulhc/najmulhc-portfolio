@@ -1,3 +1,4 @@
+import Footer from "./components/sections/Footer";
 import Hero from "./components/sections/Hero";
 import Navbar from "./components/sections/Navbar";
 import {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <Content>
         <Navbar />
         <Hero />
+        <Footer/>
       </Content>
     </Global>
   );
