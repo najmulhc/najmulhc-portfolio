@@ -2,47 +2,65 @@ import styled from "styled-components";
 import { Card } from "../Card.styled";
 
 export const AboutContainer = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-  margin-bottom: .5rem;
-`;
-export const AboutLeftContainer = styled.div``;
-export const AboutTextContainer = styled(Card)`
-  padding: 1rem;
-`;
-export const AboutImageContainer = styled(Card)`
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
-`;
-export const AboutImage = styled.img`
-  object-fit: contain;
-  width: 85%;
-`;
-export const AboutText = styled.p``;
-
-export const SocialContainer = styled.div`
-  margin-top: .5rem;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
-  height: auto;
+  margin-bottom: 0.5rem;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+`;
+export const AboutLeftContainer = styled.div`
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+`;
+export const AboutRightContainer = styled.div`
+  width: 100%;
+  padding: 0;
+`;
+
+export const AboutTextContainer = styled(Card)`
+ padding: .5rem;
+`;
+export const AboutImageContainer = styled(Card)`
+  width: 100%;
+  padding: 0.5rem;
+`;
+
+export const AboutImage = styled.img`
+  width: 100%;
+  object-fit: contain;
+`;
+export const AboutText = styled.p``;
+export const SocialContainer = styled.div`
+  width: 100%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const SocialCard = styled(Card)`
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  @media only screen and (max-width: 768px) {
+    min-height: 4rem;
+  }
 `;
 
 export const SocialLink = styled.a`
-  font-size: 4rem;
   text-decoration: none;
-  color: black;
+  font-size: 2rem;
+  color: red;
+  margin: 0;
+  padding: 0;
 `;

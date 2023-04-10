@@ -3,6 +3,7 @@ import {
   AboutImage,
   AboutImageContainer,
   AboutLeftContainer,
+  AboutRightContainer,
   AboutText,
   AboutTextContainer,
   SocialCard,
@@ -22,18 +23,7 @@ const About = () => {
         <AboutLeftContainer>
           <AboutTextContainer>
             <AboutText>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              quasi quae repudiandae laboriosam rerum! Dicta inventore porro
-              tempore sint quidem exercitationem pariatur at magnam, deleniti,
-              modi error iusto quia illo vero a possimus amet cum nemo odio
-              nihil eaque earum atque nesciunt alias! Totam nulla illo ea maxime
-              tenetur officiis, eligendi ullam aspernatur at! Rerum aliquam
-              provident assumenda voluptatibus hic quo officia ullam velit ipsa
-              repudiandae cum beatae libero suscipit quod praesentium pariatur
-              minima, perspiciatis nam corrupti! Atque possimus quaerat
-              laudantium, quia magni ea porro. Dolorem et veritatis eos,
-              deserunt, maiores at quas nobis dolores suscipit ex assumenda qui
-              ipsum.
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas inventore architecto qui asperiores dolores rerum illo, iusto doloremque facere voluptates possimus minima magnam obcaecati illum aliquid enim eos a praesentium labore deleniti laudantium aperiam. Laboriosam, debitis beatae? Perferendis beatae excepturi nulla expedita exercitationem, odio voluptatem qui recusandae delectus ullam, iure facilis nobis placeat quos pariatur nihil quasi ad autem, commodi odit eos veritatis corrupti maiores? Saepe est eligendi tenetur fugiat. Error quam et dolorem quo, incidunt quidem maxime ab nihil tempora quae! Ullam repudiandae ratione illum nisi debitis iure? Ut, et id error eum quaerat cum rerum voluptates rem quod repudiandae, impedit quam maxime sed vitae voluptatibus molestiae asperiores atque aut numquam fugiat ipsum? Dolore accusantium ipsum aspernatur quia.
             </AboutText>
           </AboutTextContainer>
           <SocialContainer>
@@ -58,15 +48,16 @@ const About = () => {
               </SocialLink>
             </SocialCard>
           </SocialContainer>
-        </AboutLeftContainer>
-        <AboutImageContainer>
-          <AboutImage
-            src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot2008/vadymvdrobot200800559/152781584-image-of-smiling-unshaven-programmer-man-showing-thumb-up-while-working-with-computers-in-office.jpg"
-            alt="My Face working"
-          />
-        </AboutImageContainer>
+        </AboutLeftContainer>{" "}
+        <AboutRightContainer>
+          <AboutImageContainer>
+            <AboutImage
+              src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot2008/vadymvdrobot200800559/152781584-image-of-smiling-unshaven-programmer-man-showing-thumb-up-while-working-with-computers-in-office.jpg"
+              alt="My Face working"
+            />
+          </AboutImageContainer>
+        </AboutRightContainer>
       </AboutContainer>
-    
     </>
   );
 };
