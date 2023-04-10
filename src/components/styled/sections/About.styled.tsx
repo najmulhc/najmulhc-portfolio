@@ -35,6 +35,7 @@ export const AboutImageContainer = styled(Card)`
 export const AboutImage = styled.img`
   width: 100%;
   object-fit: contain;
+  border-radius: 8px;
 `;
 export const AboutText = styled.p``;
 export const SocialContainer = styled.div`
@@ -59,8 +60,8 @@ export const SocialCard = styled(Card)`
 
 export const SocialLink = styled.a`
   text-decoration: none;
-  font-size: 2rem;
-  color: red;
+  font-size: 3rem;
+  color: #121212;
   margin: 0;
   padding: 0;
 `;
