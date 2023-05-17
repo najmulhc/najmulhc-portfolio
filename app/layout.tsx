@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
@@ -10,6 +11,9 @@ const rubik = Rubik({
 export const metadata = {
   title: "Najmul Huda Chowdhury",
   description: "Professional frontend web developer",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} bg-[#111a2b] min-h-screen`}>
+      <Head>
+        <link rel="shortcut icon" href="./favicon.png" />
+      </Head>
+      <body className={`${rubik.className} bg-[#111a2b] `}>
         <Header />
         {children}
         <Footer />

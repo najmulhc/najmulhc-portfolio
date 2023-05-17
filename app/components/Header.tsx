@@ -7,7 +7,7 @@ export default function Header() {
     console.log('test successfull!');
   }
   return (
-    <header className="px-4 py-6 flex items-center justify-between">
+    <header className="px-6 py-2 flex items-center justify-between">
       <Image src="/logo.svg" width={32} height={32} alt="@najmulhc logo" />
       <Navigation />
       <Button onlick={() =>alart()}>Download Resume</Button>
