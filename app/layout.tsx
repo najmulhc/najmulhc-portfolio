@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Rubik } from "next/font/google";
+import MobileNav from "./components/MobileNav";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`${rubik.className} bg-[#111a2b] `}>
         <Header />
         {children}
+        <MobileNav/>
         <Footer />
       </body>
     </html>

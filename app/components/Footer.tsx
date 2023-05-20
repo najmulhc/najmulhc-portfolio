@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaTwitter, FaHeart } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 function FooterButton({ children }: { children: React.ReactNode }) {
   return (
@@ -22,8 +22,8 @@ export default function Footer() {
           <FaTwitter />
         </FooterButton>
       </div>
-      <p className="flex w-full items-center gap-2 text-[#eeeeef] opacity-50 my-8 justify-center">
-        Designed and developed with <FaHeart /> by @najmulhc
+      <p className=" w-full text-sm gap-2 text-[#eeeeef] opacity-50 my-8 justify-center pb-[5rem] text-center">
+        Designed and developed by <strong>@najmulhc</strong>
       </p>
     </footer>
   );
