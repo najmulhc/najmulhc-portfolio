@@ -1,5 +1,10 @@
-import { FaCode, FaGraduationCap, FaHome, FaProjectDiagram} from "react-icons/fa";
-import MobileNavIconSet from "./MobileNav/MobileNavIconSet";
+import {
+  FaCode,
+  FaGraduationCap,
+  FaHome,
+  FaProjectDiagram,
+} from "react-icons/fa";
+import MobileNavIconSet from "./MobileNavIconSet";
 
 export default function MobileNav() {
   return (
