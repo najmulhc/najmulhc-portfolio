@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <section>
       <hr className="border border-{#eeeeef} mx-10 opacity-75 " />
-      <h1 className="flex items-center justify-center text-4xl font-semibold my-4 text-[#eeeeef] opacity-75 hover:opacity-100 gap-2">
+      <h1 className="flex items-center justify-center text-4xl font-semibold mt-4 mb-8 text-[#eeeeef] opacity-75 hover:opacity-100 gap-2 ">
         <FaGraduationCap /> Education
       </h1>
       <div className=" mx-10 mb-4 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -24,7 +24,7 @@ export default function Education() {
           course="Complete web development with Jhaankar Mahbub"
           year="2022"
         >
-          <Phero fill="#eeeeef" width="100px" />
+          <Phero fill="#eeeeef" width="75px" />
         </EducationCard>
       </div>
       <SeeMore href="/education">Learn More</SeeMore>

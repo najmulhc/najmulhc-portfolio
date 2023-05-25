@@ -1,0 +1,68 @@
+[debug] [2023-05-25T15:21:29.244Z] ----------------------------------------------------------------------
+[debug] [2023-05-25T15:21:29.246Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-25T15:21:29.247Z] CLI Version:   11.25.3
+[debug] [2023-05-25T15:21:29.247Z] Platform:      win32
+[debug] [2023-05-25T15:21:29.247Z] Node Version:  v18.12.1
+[debug] [2023-05-25T15:21:29.248Z] Time:          Thu May 25 2023 21:21:29 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-25T15:21:29.248Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-25T15:21:29.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-25T15:21:29.313Z] > authorizing via signed-in user (najmulhudachowdhury@gmail.com)
+[debug] [2023-05-25T15:21:29.313Z] [iam] checking project najmulhc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-25T15:21:29.315Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions [none]
+[debug] [2023-05-25T15:21:29.315Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions x-goog-quota-user=projects/najmulhc
+[debug] [2023-05-25T15:21:29.315Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-25T15:21:31.080Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions 200
+[debug] [2023-05-25T15:21:31.080Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-25T15:21:31.081Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc [none]
+[debug] [2023-05-25T15:21:31.993Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc 200
+[debug] [2023-05-25T15:21:31.993Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc {"projectId":"najmulhc","projectNumber":"540236579429","displayName":"najmulhc","name":"projects/najmulhc","resources":{"hostingSite":"najmulhc"},"state":"ACTIVE","etag":"1_007fdbac-2959-49bc-80cb-3713e0298a04"}
+[debug] [2023-05-25T15:21:34.944Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites pageToken=&pageSize=10
+[debug] [2023-05-25T15:21:36.398Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites 200
+[debug] [2023-05-25T15:21:36.398Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites {"sites":[{"name":"projects/najmulhc/sites/najmulhc","defaultUrl":"https://najmulhc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-25T15:21:36.399Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites 
+[debug] [2023-05-25T15:21:37.975Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites 200
+[debug] [2023-05-25T15:21:37.975Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites {"sites":[{"name":"projects/najmulhc/sites/najmulhc","defaultUrl":"https://najmulhc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-25T15:21:37.975Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc/webApps/-/config [none]
+[debug] [2023-05-25T15:21:38.885Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc/webApps/-/config 200
+[debug] [2023-05-25T15:21:38.885Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc/webApps/-/config {"projectId":"najmulhc","storageBucket":"najmulhc.appspot.com","apiKey":"AIzaSyD8fCCx4NS5nE5IRAPrhU2mSKfLQefhR9U","authDomain":"najmulhc.firebaseapp.com","messagingSenderId":"540236579429"}
+[debug] [2023-05-25T15:21:59.797Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:206:56)
+    at async prepareFrameworks (C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:269:13)
+    at async deploy (C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-05-25T15:23:41.147Z] ----------------------------------------------------------------------
+[debug] [2023-05-25T15:23:41.149Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-25T15:23:41.149Z] CLI Version:   11.25.3
+[debug] [2023-05-25T15:23:41.149Z] Platform:      win32
+[debug] [2023-05-25T15:23:41.149Z] Node Version:  v18.12.1
+[debug] [2023-05-25T15:23:41.150Z] Time:          Thu May 25 2023 21:23:41 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-25T15:23:41.150Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-25T15:23:41.215Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-25T15:23:41.215Z] > authorizing via signed-in user (najmulhudachowdhury@gmail.com)
+[debug] [2023-05-25T15:23:41.216Z] [iam] checking project najmulhc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-25T15:23:41.218Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions [none]
+[debug] [2023-05-25T15:23:41.218Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions x-goog-quota-user=projects/najmulhc
+[debug] [2023-05-25T15:23:41.218Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-25T15:23:43.095Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions 200
+[debug] [2023-05-25T15:23:43.096Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/najmulhc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-25T15:23:43.097Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc [none]
+[debug] [2023-05-25T15:23:43.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc 200
+[debug] [2023-05-25T15:23:43.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc {"projectId":"najmulhc","projectNumber":"540236579429","displayName":"najmulhc","name":"projects/najmulhc","resources":{"hostingSite":"najmulhc"},"state":"ACTIVE","etag":"1_007fdbac-2959-49bc-80cb-3713e0298a04"}
+[debug] [2023-05-25T15:23:46.755Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites pageToken=&pageSize=10
+[debug] [2023-05-25T15:23:47.989Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites 200
+[debug] [2023-05-25T15:23:47.989Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites {"sites":[{"name":"projects/najmulhc/sites/najmulhc","defaultUrl":"https://najmulhc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-25T15:23:47.990Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites 
+[debug] [2023-05-25T15:23:49.421Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites 200
+[debug] [2023-05-25T15:23:49.422Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/najmulhc/sites {"sites":[{"name":"projects/najmulhc/sites/najmulhc","defaultUrl":"https://najmulhc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-25T15:23:49.422Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc/webApps/-/config [none]
+[debug] [2023-05-25T15:23:51.119Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc/webApps/-/config 200
+[debug] [2023-05-25T15:23:51.120Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/najmulhc/webApps/-/config {"projectId":"najmulhc","storageBucket":"najmulhc.appspot.com","apiKey":"AIzaSyD8fCCx4NS5nE5IRAPrhU2mSKfLQefhR9U","authDomain":"najmulhc.firebaseapp.com","messagingSenderId":"540236579429"}
+[debug] [2023-05-25T15:24:11.355Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:206:56)
+    at async prepareFrameworks (C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:269:13)
+    at async deploy (C:\Users\najmu.HUDA-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
