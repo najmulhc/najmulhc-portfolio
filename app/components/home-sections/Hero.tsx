@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../Button";
 
 export default function Hero() {
   return (
@@ -6,7 +6,7 @@ export default function Hero() {
       <section className="grid grid-flow-row-dense  grid-cols-2 px-12 py-20">
         <div className="text-[#eeeeef]  col-span-2 md:col-span-1 order-2 md:order-1 flex flex-col justify-center items-start text-center md:text-left ">
           <h1 className="text-4xl font-bold mt-8 md:mt-0">
-            I am <span className="text-[#FFD700]">Najmul Huda Chowdhury</span>
+            I am <span className="text-[#FFD700]">Sikder MD. NZmu</span>
           </h1>
           <h3 className="text-lg font-normal opacity-70">
             Meta certified professional <span>Frontend Web Developer</span>

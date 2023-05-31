@@ -1,12 +1,5 @@
 import Button from "../Button";
-
-export interface Technology {
-  name: string;
-  children: React.ReactNode;
-  description: string;
-  techType: String;
-  yearsOfExperience?: number;
-}
+import { Technology } from "@/app/types";
 
 export default function TechCard({
   name,
