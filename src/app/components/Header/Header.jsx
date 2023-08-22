@@ -1,4 +1,4 @@
-import ToggleThemeButton from "../Buttons/ToggleThemeButton.jsx";
+import ToggleThemeButton from "../Buttons/toggle.jsx";
 
 const Header = () => {
   return (
