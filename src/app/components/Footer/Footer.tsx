@@ -1,10 +1,51 @@
+import Link from "next/link";
+import Logo from "../Logo/Logo";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+
 const Footer = () => {
   return (
-    <footer className="mx-[128px] py-4">
-      <hr className="border-[1px] dark:border-[1px] border-[#191919] dark:border-[#f5f5f5] opacity-50" />
-      <p className="text-center my-2 text-[16px] opacity-70 dark:text-[#f5f5f5] text-[#191919]">
-       Designed and developed By <span className="text[#764ABC]">@najmulhc</span>
-      </p>
+    <footer className="mx-[128px] py-[32px]  ">
+      <div className="footer-top-container">
+        <Logo
+          width={64}
+          height={64}
+          color=""
+          classname="fill-[#191919] dark:fill-[#d5d5d5]"
+        />
+        <div className="footer-top-right">
+          <p className="footer-top">+880 19044 02144</p>
+          <p className="footer-top">najmulhc@outlook.com</p>
+          <p className="footer-top">
+            <Link href="http://www.github.com/najmulhc" target="_blank">
+              <AiFillGithub />
+            </Link>
+            <Link href="http://www.linkedin.com/in/najmulhc" target="_blank">
+              <AiFillLinkedin />
+            </Link>
+            <Link href="http://www.twitter.com/najmulhc" target="_blank">
+              <AiFillTwitterCircle />
+            </Link>
+          </p>
+        </div>
+      </div>
+      <hr className="my-[8px] border border-[#151515] dark:border-[#d5d5d5] opacity-80" />
+      <div className="footer-bottom">
+        <div className="footer-bottom-left">
+          <Link href="#">Home</Link>
+          <Link href="#">Tech Stack</Link>
+          <Link href="#">Projects</Link>
+          <Link href="#">Education</Link>
+          <Link href="#">Contact</Link>
+        </div>
+        <p className="text-[16px] font-normal">
+          Designed and developed by{" "}
+          <span className="text-[#764ABC]">@najmulhc</span>
+        </p>
+      </div>
     </footer>
   );
 };
