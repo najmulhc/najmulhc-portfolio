@@ -19,3 +19,23 @@ body {
 li{
     @apply text-[16px] font-normal hover:text-[#764ABC]
 }
+
+.footer-top-container {
+  @apply flex justify-between items-end
+}
+
+.footer-top-right{
+      @apply flex gap-[32px] items-center opacity-80 
+}
+
+p.footer-top{
+    @apply flex gap-[8px] items-center text-[16px]
+}
+
+.footer-bottom{
+    @apply flex justify-between items-center opacity-80
+}
+
+.footer-bottom-left {
+    @apply flex gap-[16px] text-[16px]
+}
