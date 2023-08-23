@@ -1,8 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
-import { useEffect , useState} from "react";
-import {FiMoon, FiSun} from 'react-icons/fi'
- 
+import { useEffect, useState } from "react";
+import { HiSun, HiMoon } from "react-icons/hi";
+
 const ToggleThemeButton = () => {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -12,13 +12,12 @@ const ToggleThemeButton = () => {
     return null;
   }
   return (
-    <button
-      type="button"
-      className=""
+    <a
+      className="text-[20px] font-normal hover:text-[#764ABC]  "
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
-      {resolvedTheme === "dark" ?  <FiMoon /> :  <FiSun/>}
-    </button>
+      {resolvedTheme === "dark" ? <HiMoon /> : <HiSun />}
+    </a>
   );
 };
 

@@ -11,3 +11,11 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+
+.header {
+    @apply flex gap-[24px] items-center justify-between;
+}
+
+li{
+    @apply text-[16px] font-normal hover:text-[#764ABC]
+}
