@@ -39,3 +39,20 @@ p.footer-top{
 .footer-bottom-left {
     @apply flex gap-[16px] text-[16px]
 }
+
+h1.h1 {
+    @apply font-semibold text-[48px] text-[#3E2763] dark:text-white 
+}
+p.p {
+    @apply font-normal text-[16px] dark:text-[#cccccc] opacity-80 text-[#191919] leading-[24px]
+}
+
+h2.h2{
+    @apply font-semibold text-[32px] dark:text-[#dedede] text-[#191919]
+}
+h3.h3 {
+    @apply font-medium text-[24px]  dark:text-[#dedede] text-[#191919]
+}
+.badge {
+    @apply font-normal text-[12px] dark:text-[#cccccc]   text-[#191919]   px-[8px] py-[4px] border border-[#191919] dark:border-[#cccccc] rounded-full inline-block
+}
