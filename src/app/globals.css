@@ -41,7 +41,7 @@ p.footer-top{
 }
 
 h1.h1 {
-    @apply font-semibold text-[48px] text-[#3E2763] dark:text-white 
+    @apply font-semibold text-[48px] text-[#3E2763] dark:text-white leading-[48px]
 }
 p.p {
     @apply font-normal text-[16px] dark:text-[#cccccc] opacity-80 text-[#191919] leading-[24px]
@@ -55,4 +55,10 @@ h3.h3 {
 }
 .badge {
     @apply font-normal text-[12px] dark:text-[#cccccc]   text-[#191919]   px-[8px] py-[4px] border border-[#191919] dark:border-[#cccccc] rounded-full inline-block
+}
+button {
+    @apply text-[16px] px-[16px] py-[8px] border rounded-full text-[#d5d5d5] bg-[#191919] dark:bg-transparent hover:bg-[#d5d5d5] hover:text-[#191919] dark:hover:bg-[#d5d5d5]
+}
+.hero-text-container{
+    @apply flex flex-col justify-start items-start gap-[8px]
 }
