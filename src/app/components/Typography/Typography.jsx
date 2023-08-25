@@ -10,6 +10,9 @@ export const H2 = ({children, classname}) => {
 export const H3 = ({children, classname}) => {
     return <h3 className={` ${classname} h3`}>{children}</h3>
 }
+export const H4 = ({children, classname}) => {
+    return <h4 className={` ${classname} h4`}>{children}</h4>
+}
 export const Badge = ({children, classname}) => {
     return <div className={`p badge ${classname}`}>{children}</div>
 }

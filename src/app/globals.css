@@ -53,12 +53,21 @@ h2.h2{
 h3.h3 {
     @apply font-medium text-[24px]  dark:text-[#dedede] text-[#191919]
 }
+h4.h4{
+    @apply font-semibold text-[18px]  dark:text-[#dedede] text-[#191919] 
+}
 .badge {
     @apply font-normal text-[12px] dark:text-[#cccccc]   text-[#191919]   px-[8px] py-[4px] border border-[#191919] dark:border-[#cccccc] rounded-full inline-block
 }
-button {
-    @apply text-[16px] px-[16px] py-[8px] border rounded-full text-[#d5d5d5] bg-[#191919] dark:bg-transparent hover:bg-[#d5d5d5] hover:text-[#191919] dark:hover:bg-[#d5d5d5]
+button , .button{
+    @apply text-[16px] px-[16px] py-[8px] inline-block text-center border rounded-full text-[#d5d5d5] bg-[#191919] dark:bg-transparent hover:bg-[#d5d5d5] hover:text-[#191919] dark:hover:bg-[#d5d5d5]
 }
 .hero-text-container{
     @apply flex flex-col justify-start items-start gap-[8px]
+}
+.card {
+    @apply w-full bg-white dark:bg-[#d5d5d510]
+}
+.card-inner {
+    @apply w-full p-[16px]
 }
