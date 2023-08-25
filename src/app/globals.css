@@ -53,7 +53,7 @@ h2.h2{
 h3.h3 {
     @apply font-medium text-[24px]  dark:text-[#dedede] text-[#191919]
 }
-h4.h4{
+h4.h4, .h4{
     @apply font-semibold text-[18px]  dark:text-[#dedede] text-[#191919] 
 }
 .badge {
