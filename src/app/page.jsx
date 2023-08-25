@@ -3,6 +3,9 @@ import TopBanner from "./components/Pages/Home/TopBanner";
 import Title from "./components/Titles/Title";
 import ProjectCard from "./components/Cards/ProjectCard";
 import TechCard from "./components/Cards/TechCard";
+import Qoute from "./components/Pages/Home/Qoute"
+
+
 const HomePage = () => {
   return (
     <main className="">
@@ -28,6 +31,7 @@ const HomePage = () => {
           description="React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵"
         />
       </div>
+      <Qoute/>
     </main>
   );
 };
