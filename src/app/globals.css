@@ -72,5 +72,5 @@ button , .button{
     @apply w-full p-[16px]
 }
 section.section {
-    @apply mx-[128px] py-4 gap-2
+    @apply mx-[128px] py-[128px] gap-2
 }
