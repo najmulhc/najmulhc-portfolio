@@ -2,7 +2,8 @@ import Card, { CardImage, CardInner } from "./Card";
 import {Badge, H3, H4, P} from '../Typography/Typography'
 import Button from "../Buttons/button";
 
-const ProjectCard = ({name, type, time, description, image ,link}) => {
+const ProjectCard = ({project}) => {
+  const {name, type, time, description, image ,link} = project;
   return (
     <Card>
       <CardImage

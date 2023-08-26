@@ -4,7 +4,9 @@ import Link from "next/link";
 import { P, H3, Badge} from "../Typography/Typography";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const TechCard = ({ name, logo, type, description }) => {
+const TechCard = ({ technology
+}) => {
+  const { name, logo, type, description } = technology;
   return (
     <Card>
       <CardInner>
