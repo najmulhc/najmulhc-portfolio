@@ -24,7 +24,7 @@ const HomePage = () => {
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
   };
   return (
-    <main className="">
+    <main className="mx-[128px]">
       <Hero />
       <AboutMeHome />
       <TopBanner />

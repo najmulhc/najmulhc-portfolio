@@ -8,10 +8,10 @@ const Header = () => {
       <Logo width={32} height={32} classname="fill-[#191919] dark:fill-[#d5d5d5]" />
       <ul className="header">
         <li>
-          <Link href="#" >Home</Link>
+          <Link href="/" >Home</Link>
         </li>
         <li>
-          <Link href="#">Tech Stack</Link>
+          <Link href="/tech-stack">Tech Stack</Link>
         </li>
         <li>
           <Link href="#">Projects</Link>

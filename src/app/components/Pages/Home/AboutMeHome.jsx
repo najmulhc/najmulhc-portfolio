@@ -5,7 +5,7 @@ import Title from "../../Titles/Title";
 const AboutMeHome = () => {
   return (
     <section className="section grid grid-cols-2 items-center ">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-start items-center">
         <Image
           width={340}
           src="https://smartslider3.com/wp-content/uploads/slider/cache/ebab2373b76342e707ae1a386570b3b1/portfolio.webp"
