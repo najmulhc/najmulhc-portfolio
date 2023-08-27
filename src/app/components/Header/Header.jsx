@@ -1,20 +1,26 @@
 import Link from "next/link.js";
+import ToggleThemeButton from "../Buttons/toggle.jsx";
 import Logo from "../Logo/Logo.jsx";
-import ToggleThemeButton from '../Buttons/toggle.jsx'
 
 const Header = () => {
   return (
     <header className="mx-[128px] flex justify-between text-3xl py-4">
-      <Logo width={32} height={32} classname="fill-[#191919] dark:fill-[#d5d5d5]" />
+      <Link href="/"> 
+        <Logo
+          width={32}
+          height={32}
+          classname="fill-[#191919] dark:fill-[#d5d5d5]"
+        />
+      </Link>
       <ul className="header">
         <li>
-          <Link href="/" >Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
           <Link href="/tech-stack">Tech Stack</Link>
         </li>
         <li>
-          <Link href="#">Projects</Link>
+          <Link href="/projects">Projects</Link>
         </li>
         <li>
           <Link href="#">Education</Link>
@@ -23,7 +29,7 @@ const Header = () => {
           <Link href="#">Contact</Link>
         </li>
         <li>
-          <ToggleThemeButton /> 
+          <ToggleThemeButton />
         </li>
       </ul>
     </header>
