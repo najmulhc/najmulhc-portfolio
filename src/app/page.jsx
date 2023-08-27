@@ -4,7 +4,7 @@ import ProjectCard from "./components/Cards/ProjectCard";
 import TechCard from "./components/Cards/TechCard";
 import Qoute from "./components/Pages/Home/Qoute";
 import Section from "./components/Section/Section";
-import AboutMeHome from './components/Pages/Home/AboutMeHome'
+import AboutMeHome from "./components/Pages/Home/AboutMeHome";
 
 const HomePage = () => {
   const project = {
@@ -26,7 +26,7 @@ const HomePage = () => {
   return (
     <main className="">
       <Hero />
-      <AboutMeHome/>
+      <AboutMeHome />
       <TopBanner />
       <Section title="Featured Projects">
         <div className="grid grid-cols-3 gap-4">
@@ -42,8 +42,7 @@ const HomePage = () => {
           <TechCard technology={technology} />
           <TechCard technology={technology} />
         </div>
-      </Section> 
-      <Section title="Section Title" />
+      </Section>
     </main>
   );
 };
