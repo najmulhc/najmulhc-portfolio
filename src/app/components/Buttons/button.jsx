@@ -20,7 +20,7 @@ const Button = ({ children, onclick, type, classname, link }) => {
     );
   } else {
     return (
-      <Link href={link} onclick={sendToLink} className={`${classname} button`}   >
+      <Link href={link} onClick={sendToLink} className={`${classname} button`}   >
         {children}
       </Link>
     );

@@ -12,7 +12,7 @@ const Header = () => {
           classname="fill-[#191919] dark:fill-[#d5d5d5]"
         />
       </Link>
-      <ul className="header">
+      <ul className="header font-medium">
         <li>
           <Link href="/">Home</Link>
         </li>
