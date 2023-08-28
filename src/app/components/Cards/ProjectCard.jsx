@@ -19,7 +19,7 @@ const ProjectCard = ({project}) => {
         <P>
         {description}
         </P>
-        <Button link={link} classname="w-full mt-[18px] bg-red-700">Project Detail</Button>
+        <Button link={link} classname="button w-full mt-2">Project Detail</Button>
       </CardInner>
     </Card>
   );
