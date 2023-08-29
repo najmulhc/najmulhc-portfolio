@@ -66,11 +66,11 @@ button , .button{
     @apply flex flex-col justify-start items-start gap-[8px]
 }
 .card {
-    @apply w-full bg-white dark:bg-[#d5d5d510]
+    @apply w-full bg-white dark:bg-[#242424]
 }
 .card-inner {
     @apply w-full p-[16px]
 }
 section.section {
-    @apply mx-[128px] py-[128px] gap-2
+    @apply  py-[128px] gap-2
 }

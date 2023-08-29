@@ -5,9 +5,7 @@ import { useRouter } from "next/navigation";
 
 const Button = ({ children, onclick, type, classname, link }) => {
   const router = useRouter();
-  const sendToLink = () => {
-    router.forward(link)
-  }
+  
   if (!link) {
     return (
       <button
@@ -20,7 +18,7 @@ const Button = ({ children, onclick, type, classname, link }) => {
     );
   } else {
     return (
-      <Link href={link} onclick={sendToLink} className={`${classname} button`}   >
+      <Link href={link}   target="_blank" className={`${classname} `}   >
         {children}
       </Link>
     );
