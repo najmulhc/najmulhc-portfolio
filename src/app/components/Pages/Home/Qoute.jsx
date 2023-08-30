@@ -5,7 +5,7 @@ const Qoute = () => {
         " Everyone in this country should learn how to program <br />
         because it teaches you how to think."
       </h2>
-      <h4 classname="text-right font-semibold text-[18px] text-[#dedede] ">- Steve Jobs</h4>
+      <h4 className="text-right font-semibold text-[18px] text-[#dedede] ">- Steve Jobs</h4>
     </section>
   );
 };

@@ -11,7 +11,7 @@ const Button = ({ children, onclick, type, classname, link }) => {
       <button
         className={classname}
         type={type}
-        onClick={onclick ? () => onclick() : console.log("nothing here")}
+        onClick={onclick ? () => onclick() :  console.log(" ")}
       >
         {children}
       </button>

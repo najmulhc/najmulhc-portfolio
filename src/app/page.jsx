@@ -5,8 +5,9 @@ import TechCard from "./components/Cards/TechCard";
 import Qoute from "./components/Pages/Home/Qoute";
 import Section from "./components/Section/Section";
 import AboutMeHome from "./components/Pages/Home/AboutMeHome";
+import getData from "./services/getData";
 
-const HomePage = () => {
+const HomePage = async () => {
   const project = {
     name: "MireHouse",
     time: "a long time ago",
@@ -23,6 +24,9 @@ const HomePage = () => {
     description:
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
   };
+
+  const data = await getData();
+  console.log(data);
   return (
     <main className="mx-[128px]">
       <Hero />
