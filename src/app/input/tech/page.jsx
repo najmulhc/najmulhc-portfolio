@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { H1 } from "../../components/Typography/Typography";
 import Select from "react-select";
 import React from "react";
+import postTechnology from "../../services/postTechnology";
 
 const techTypes = [
   { label: "Frontend Library", value: "Frontend Library" },
@@ -18,7 +19,7 @@ const Page = () => {
   const { handleSubmit, control, register } = useForm();
   const [type, setType] = React.useState("");
 
-  const handleInput = (data) => {
+  const handleInput = async (data) => {
     const { time, name, darkLogo, lightLogo, description } = data;
     const timeOfLearning = new Date(time).getTime();
     const newTech = {
@@ -29,7 +30,8 @@ const Page = () => {
       lightLogo,
       description,
     };
-    // we need to send the tech object to the server. 
+    // we need to send the tech object to the server.
+    const response = await postTechnology(newTech);
   };
   return (
     <main>

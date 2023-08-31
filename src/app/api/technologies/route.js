@@ -10,10 +10,10 @@ export const GET = async (request) => {
       if (!mongoose.connection.readyState) {
         throw new Error("Mongodb failed to connect!");
       }
-    const tech = await Tech.find();
+    const technologies = await Tech.find();
      return NextResponse.json({
        success: true,
-       message: tech,
+      technologies,
      });
     
   } catch (error) {
@@ -26,3 +26,26 @@ export const GET = async (request) => {
     );
   }
 };
+
+
+export const POST = async  (request) => {
+  const input = await request.json();
+  try { 
+    await dbconnect();
+    const newTech = new Tech(input);
+    const savedTech = await newTech.save();
+
+     return NextResponse.json({
+      success: true, 
+      tech: savedTech
+     }, {status: 200})
+  } catch (error) {
+    return NextResponse.json(
+      {
+        success: false,
+        message: error.message,
+      },
+      { status: 500 }
+    );
+  }
+}
