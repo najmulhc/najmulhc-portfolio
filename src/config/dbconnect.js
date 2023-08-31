@@ -6,6 +6,7 @@ const dbconnect = async () => {
       .connect(
         "mongodb+srv://najmulhudachowdhury:ZMwX2guxAjauZMGZ@portfoliocluster.pzx1mdh.mongodb.net/?retryWrites=true&w=majority"
       );
+      console.log("Connected with mongodb");
     } else {
         console.log("Mongodb already connected!");
     }

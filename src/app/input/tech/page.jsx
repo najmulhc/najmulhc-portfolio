@@ -16,7 +16,7 @@ const techTypes = [
   { label: "Design Tool", value: "Design Tool" },
 ];
 const Page = () => {
-  const { handleSubmit, control, register } = useForm();
+  const { handleSubmit, control, register, reset } = useForm();
   const [type, setType] = React.useState("");
 
   const handleInput = async (data) => {
@@ -31,7 +31,7 @@ const Page = () => {
       description,
     };
     // we need to send the tech object to the server.
-    const response = await postTechnology(newTech);
+    const response = await postTechnology(newTech); reset();
   };
   return (
     <main>

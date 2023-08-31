@@ -2,9 +2,22 @@
 import { useForm } from "react-hook-form";
 import { H1 } from "../../components/Typography/Typography";
 import postEducation from "../../services/postEducation";
+import { useState } from "react";
+import Select from "react-select";
 
-const EducationForm = () => { 
+const educationTypes = [
+  {
+    label:"Formal Education", value: "Formal Education"
+  },{
+    label: "Coding Bootcamp", value: "Coding Bootcamp"
+  }, {
+    label: "Online Course", value: "Online Course"
+  }
+]
+
+const EducationForm = () => {
   const { register, handleSubmit, reset } = useForm();
+  const [type, setType] = useState("");
 
   const onSubmit = async (data) => {
     const { start, end } = data;
@@ -13,7 +26,7 @@ const EducationForm = () => {
     await postEducation({
       ...data,
       start: startDate,
-      end: endDate,
+      end: endDate, type
     });
     reset();
   };
@@ -38,6 +51,16 @@ const EducationForm = () => {
           <input
             type="text"
             {...register("logo", { required: true })}
+            className="w-full p-2 border rounded mt-1"
+          />
+        </label>
+        <label className="block mb-2 font-semibold text-gray-700">
+          Type of Education:
+          <Select
+            options={educationTypes}
+            onChange={(e) => {
+              setType(e.value);
+            }}
             className="w-full p-2 border rounded mt-1"
           />
         </label>

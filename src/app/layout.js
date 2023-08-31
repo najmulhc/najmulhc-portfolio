@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: "Najmul Huda Chowdhury | Professional web developer",
   description: "Hi, this is huda!",
-  favicon: "/app/favicon.ico",
+  favicon: "/app/icon.svg",
 };
 
 export default function RootLayout({ children }) {

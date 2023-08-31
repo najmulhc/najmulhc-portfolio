@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
-import dbconnect from '../../../config/dbconnect'
-import Education  from '../../../models/educationModel'
+import dbconnect from "../../../config/dbconnect";
+import Education from "../../../models/educationModel";
 
-export const GET = (request) => {
+  dbconnect();
+
+export const GET = async () => {
+ 
   try {
+    const educations = await Education.find({});
     return NextResponse.json({
       success: true,
-      message: "Data from the backend",
+      educations,
     });
   } catch (error) {
     return NextResponse.json(
@@ -21,7 +25,7 @@ export const GET = (request) => {
 
 export const POST = async (request) => {
   try {
-    await dbconnect();
+     
     const body = await request.json();
     const newEducation = new Education(body);
     const savedEducation = await newEducation.save();

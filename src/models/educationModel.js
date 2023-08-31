@@ -24,6 +24,16 @@ const educationSchema = new mongoose.Schema({
     required: [true, "Start date is required."],
     min: [0, "Start date must be a positive number."],
   },
+  type: {
+    type: String,
+    required:[true, "What type of education is that?"],
+    enum: {
+      values: [
+      "Formal Education", "Coding Bootcamp", "Online Course"
+      ],
+      message: "That's not a valid type! Choose wisely.",
+    },
+  },
   end: {
     type: Number,
     required: [true, "End date is required."],
@@ -38,8 +48,7 @@ const educationSchema = new mongoose.Schema({
   description: {
     type: String,
     required: [true, "Description is required."],
-    minlength: [480, "Description must be at least 480 characters."],
-    maxlength: [500, "Description cannot exceed 500 characters."],
+    
   },
   logo: {
     type: String,
@@ -54,13 +63,7 @@ const educationSchema = new mongoose.Schema({
   },
   certificate: {
     type: String,
-    trim: true,
-    validate: {
-      validator: function (value) {
-        return /^https?:\/\/\S+$/.test(value);
-      },
-      message: "Invalid certificate URL format.",
-    },
+     
   },
 });
 
