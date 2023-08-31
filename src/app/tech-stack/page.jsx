@@ -1,15 +1,16 @@
 import SingleType from "../components/Pages/TechStack/SingleType";
 import TechDetailCard from "../components/Cards/TechDetailCard";
-import PageTitle from '../components/PageTitle/PageTitle'
+import PageTitle from "../components/PageTitle/PageTitle";
 
 const TechStackPage = () => {
   const technology = {
     name: "React",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+    lightLogo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+    darkLogo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
     type: "Frontend Library",
     description:
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
-    time: "1 year",
+    timeOfLearning: 1677782400,
   };
   return (
     <main className="min-h-screen px-[128px]">

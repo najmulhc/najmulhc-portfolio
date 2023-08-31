@@ -25,8 +25,7 @@ const HomePage = async () => {
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
   };
 
-  const data = await getData();
-  console.log(data);
+  const data = await getData(); 
   return (
     <main className="mx-[128px]">
       <Hero />
