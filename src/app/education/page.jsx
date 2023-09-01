@@ -6,10 +6,11 @@ import Section from "../components/Section/Section";
 
 const EducationPage = async () => {
   const educations = await getEducation();
-  const types = ["Formal Education", "Coding BootCamp", "Online Course"];
-
+  const types = ["Formal Education", "Coding Bootcamp", "Online Course"];
+ 
+ console.log(data);
   return (
-    <main className="mx-[128px] ">
+    <main className="mx-32 ">
       <PageTitle
         pageName="Education"
         description="Dive into my journey of learning and growth. Discover my educational endeavors, from formal academics to intensive coding bootcamps and enriching online courses. This page unveils the stepping stones that have equipped me with the knowledge and skills to excel in the dynamic world of technology."

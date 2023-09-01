@@ -27,7 +27,7 @@ const HomePage = async () => {
 
   const data = await getData(); 
   return (
-    <main className="mx-[128px]">
+    <main className="mx-32">
       <Hero />
       <AboutMeHome />
       <TopBanner />

@@ -1,10 +1,10 @@
 import PageTitle from "../components/PageTitle/PageTitle";
 import Section from "../components/Section/Section";
-import ProjectPageCard from '../components/Pages/Projects/ProjectPageCard'
+import ProjectPageCard from "../components/Pages/Projects/ProjectPageCard";
 
 const page = () => {
   return (
-    <main className="mx-[128px] min-h-screen">
+    <main className="mx-32 min-h-screen">
       <PageTitle
         pageName="Projects"
         description="Embark on a tour of my digital creations. Explore the projects I've crafted with passion and expertise, each representing a unique blend of creativity, innovation, and problem-solving. From concept to completion, these endeavors showcase my dedication to building meaningful and impactful digital solutions."

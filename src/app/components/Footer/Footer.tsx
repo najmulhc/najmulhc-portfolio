@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="mx-[128px] py-[32px]  ">
+    <footer className="mx-32 py-8  ">
       <div className="footer-top-container">
         <Logo
           width={64}
@@ -32,7 +32,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="my-[8px] border border-[#151515] dark:border-[#d5d5d5] opacity-80" />
+      <hr className="my-2 border border-[#151515] dark:border-[#d5d5d5] opacity-80" />
       <div className="footer-bottom">
         <div className="footer-bottom-left">
           <Link href="#">Home</Link>
@@ -41,7 +41,7 @@ const Footer = () => {
           <Link href="#">Education</Link>
           <Link href="#">Contact</Link>
         </div>
-        <p className="text-[16px] font-normal">
+        <p className="text-base font-normal">
           Designed and developed by{" "}
           <span className="text-[#764ABC]">@najmulhc</span>
         </p>

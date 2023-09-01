@@ -8,7 +8,7 @@ const TechDetailCard = ({ technology }) => {
   return (
     <Card>
       <CardInner>
-        <div className="flex justify-start items-center gap-[8px] mb-[16px]">
+        <div className="flex justify-start items-center gap-2 mb-4">
           <Image src={logo} width={64} height={64} alt="html logo" />
           <div className="w-full">
             <H3>{name}</H3>
