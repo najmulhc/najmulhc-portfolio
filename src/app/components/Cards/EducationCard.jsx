@@ -11,7 +11,7 @@ const EducationCard = ({ education }) => {
     <Card>
       <CardInner>
         <div className="flex justify-start end w-full gap-4">
-          <Image src={logo} alt="education logo" width={64} height={64} />
+          <Image className="object-contain" src={logo} alt="education logo" width={64} height={64} />
           <div className=" w-full">
             <H3>{course}</H3>
 

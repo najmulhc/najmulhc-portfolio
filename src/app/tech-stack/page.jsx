@@ -1,17 +1,13 @@
 import SingleType from "../components/Pages/TechStack/SingleType";
 import TechDetailCard from "../components/Cards/TechDetailCard";
 import PageTitle from "../components/PageTitle/PageTitle";
+import getTechnologies from "../services/getTechnologies";
 
-const TechStackPage = () => {
-  const technology = {
-    name: "React",
-    lightLogo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
-    darkLogo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
-    type: "Frontend Library",
-    description:
-      "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
-    timeOfLearning: 1677782400,
-  };
+const TechStackPage = async () => {
+  
+  const {technologies} = await getTechnologies();
+ 
+  
   return (
     <main className="min-h-screen px-32">
       <PageTitle
@@ -20,8 +16,11 @@ const TechStackPage = () => {
       />
       <SingleType type="Frontend Frameworks">
         <div className="grid grid-cols-2 gap-4">
-          <TechDetailCard technology={technology} />
-          <TechDetailCard technology={technology} />
+           
+            <TechDetailCard technology={technologies[1]} />;
+           {
+            technologies.map(item => <TechDetailCard technology={item} key={item._id}/>)
+           }
         </div>
       </SingleType>
     </main>

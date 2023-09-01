@@ -3,18 +3,18 @@ import dbconnect from "../../../config/dbconnect";
 import mongoose from "mongoose";
 import Tech from "../../../models/techmodel"
 
-export const GET = async (request) => {
-  await dbconnect();
+dbconnect()
+ 
+
+export const GET = async () => {
+   
 
   try {
-      if (!mongoose.connection.readyState) {
-        throw new Error("Mongodb failed to connect!");
-      }
-    const technologies = await Tech.find();
-     return NextResponse.json({
-       success: true,
+    const technologies = await Tech.find({});
+    return NextResponse.json({
+      success: true,
       technologies,
-     });
+    });
     
   } catch (error) {
     return NextResponse.json(

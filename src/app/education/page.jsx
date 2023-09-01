@@ -7,8 +7,7 @@ import Section from "../components/Section/Section";
 const EducationPage = async () => {
   const educations = await getEducation();
   const types = ["Formal Education", "Coding Bootcamp", "Online Course"];
- 
- console.log(data);
+  
   return (
     <main className="mx-32 ">
       <PageTitle

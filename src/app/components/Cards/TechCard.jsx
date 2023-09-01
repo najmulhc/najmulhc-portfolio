@@ -19,7 +19,7 @@ const TechCard = ({ technology
         </div>
         <P>{description}</P>
         <Link
-          className="h4 flex gap-1 text-right items-center justify-end"
+          className="h4 flex gap-1 text-right items-center justify-end mt-2"
           href="http://www.github.com"
         >
           See Projects with {name} <FaArrowRightLong />
