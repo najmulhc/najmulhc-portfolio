@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
 }
 
 li {
-  @apply text-base font-normal hover:text-[#764ABC];
+  @apply text-base font-normal hover:text-[#155EEF];
 }
 
 .footer-top-container {
@@ -42,34 +42,34 @@ p.footer-top {
 }
 
 h1.h1 {
-  @apply font-semibold text-5xl text-[#3E2763] dark:text-white leading-[48px];
+  @apply font-semibold text-5xl text-[#155EEF] dark:text-white  ;
 }
 p.p {
-  @apply font-normal text-base dark:text-[#cccccc] opacity-80 text-[#191919] leading-6;
+  @apply font-normal text-base dark:text-[#cccccc] opacity-80 text-[#121926] leading-6;
 }
 
 h2.h2 {
-  @apply font-semibold text-4xl dark:text-[#dedede] text-[#191919];
+  @apply font-semibold text-4xl dark:text-[#EEF2F6] text-[#121926];
 }
 h3.h3 {
-  @apply font-medium text-[24px]  dark:text-[#dedede] text-[#191919];
+  @apply font-medium text-2xl  dark:text-[#EEF2F6] text-[#121926];
 }
 h4.h4,
 .h4 {
-  @apply font-semibold text-[18px]  dark:text-[#dedede] text-[#191919];
+  @apply font-semibold text-lg  dark:text-[#EEF2F6] text-[#121926];
 }
 .badge {
-  @apply font-normal text-sm dark:text-[#cccccc]   text-[#191919]   px-2 py-1 border border-[#191919] dark:border-[#cccccc] rounded-full inline-block;
+  @apply font-normal text-sm dark:text-[#cccccc]   text-[#121926]   px-2 py-1 border border-[#121926] dark:border-[#cccccc] rounded-full inline-block;
 }
 button,
 .button {
-  @apply text-base px-4 py-2 inline-block text-center border rounded-full text-[#d5d5d5] bg-[#191919] dark:bg-transparent hover:bg-[#d5d5d5] hover:text-[#191919] dark:hover:bg-[#d5d5d5];
+  @apply text-base px-4 py-2 inline-block text-center border rounded-full text-[#EEF2F6] bg-[#121926] dark:bg-transparent hover:bg-[#EEF2F6] hover:text-[#121926] dark:hover:bg-[#EEF2F6];
 }
 .hero-text-container {
   @apply flex flex-col justify-start items-start gap-2;
 }
 .card {
-  @apply w-full bg-white dark:bg-[#242424];
+  @apply w-full bg-white dark:bg-[#202939];
 }
 .card-inner {
   @apply w-full p-4;

@@ -14,7 +14,7 @@ const Footer = () => {
           width={64}
           height={64}
           color=""
-          classname="fill-[#191919] dark:fill-[#d5d5d5]"
+          classname="fill-[#121926] dark:fill-[#EEF2F6]"
         />
         <div className="footer-top-right">
           <p className="footer-top">+880 19044 02144</p>
@@ -32,7 +32,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="my-2 border border-[#151515] dark:border-[#d5d5d5] opacity-80" />
+      <hr className="my-2 border border-[#151515] dark:border-[#EEF2F6] opacity-80" />
       <div className="footer-bottom">
         <div className="footer-bottom-left">
           <Link href="#">Home</Link>
