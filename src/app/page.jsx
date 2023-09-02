@@ -4,8 +4,7 @@ import ProjectCard from "./components/Cards/ProjectCard";
 import TechCard from "./components/Cards/TechCard";
 import Qoute from "./components/Pages/Home/Qoute";
 import Section from "./components/Section/Section";
-import AboutMeHome from "./components/Pages/Home/AboutMeHome";
-import getData from "./services/getData";
+import AboutMeHome from "./components/Pages/Home/AboutMeHome"; 
 
 const HomePage = async () => {
   const project = {
@@ -24,8 +23,7 @@ const HomePage = async () => {
     description:
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
   };
-
-  const data = await getData(); 
+ 
   return (
     <main className="mx-32">
       <Hero />
