@@ -54,6 +54,10 @@ const techSchema = new mongoose.Schema({
       message: "Time of learning should be a valid Unix timestamp (integer).",
     },
   },
+  isFeatured: {
+    type: Boolean, 
+    default: false
+  }
 });
 
 const Tech = mongoose.models.tech || mongoose.model("tech", techSchema);

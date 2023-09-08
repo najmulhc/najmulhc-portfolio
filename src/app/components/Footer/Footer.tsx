@@ -32,7 +32,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="my-2 border border-[#151515] dark:border-[#EEF2F6] opacity-80" />
+      <hr className="my-2 border border-[#202939] dark:border-[#EEF2F6] opacity-80" />
       <div className="footer-bottom">
         <div className="footer-bottom-left">
           <Link href="#">Home</Link>

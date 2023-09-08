@@ -18,9 +18,11 @@ const techTypes = [
 const Page = () => {
   const { handleSubmit, control, register, reset } = useForm();
   const [type, setType] = React.useState("");
+  
 
   const handleInput = async (data) => {
-    const { time, name, darkLogo, lightLogo, description } = data;
+    const { time, name, darkLogo, lightLogo, description, isFeatured } = data;
+    console.log(isFeatured)
     const timeOfLearning = new Date(time).getTime();
     const newTech = {
       type,
@@ -29,6 +31,7 @@ const Page = () => {
       darkLogo,
       lightLogo,
       description,
+      isFeatured,
     };
     // we need to send the tech object to the server.
     const response = await postTechnology(newTech); reset();
@@ -72,6 +75,14 @@ const Page = () => {
             type="text"
             {...register("darkLogo", { required: true })}
             className="w-full p-2 border rounded mt-1"
+          />
+        </label>
+        <label className="block mb-2 font-semibold text-gray-700">
+          Featured Technology
+          <input
+            type="checkbox"
+            {...register("isFeatured", {})}
+            className="ml-2 mt-1"  
           />
         </label>
         <label className="block mb-2 font-semibold text-gray-700">
