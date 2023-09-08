@@ -4,7 +4,8 @@ import ProjectCard from "./components/Cards/ProjectCard";
 import TechCard from "./components/Cards/TechCard";
 import Qoute from "./components/Pages/Home/Qoute";
 import Section from "./components/Section/Section";
-import AboutMeHome from "./components/Pages/Home/AboutMeHome"; 
+import AboutMeHome from "./components/Pages/Home/AboutMeHome";
+import getTechnologies from "./services/getTechnologies";
 
 const HomePage = async () => {
   const project = {
@@ -23,7 +24,9 @@ const HomePage = async () => {
     description:
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
   };
- 
+  const { technologies } = await getTechnologies();
+  console.log(technologies.filter((tech) => tech.isFeatured === true));
+
   return (
     <main className="mx-32">
       <Hero />
@@ -39,9 +42,11 @@ const HomePage = async () => {
       <Qoute />
       <Section title="Featured Tech">
         <div className="grid grid-cols-3 gap-4">
-          <TechCard technology={technology} />
-          <TechCard technology={technology} />
-          <TechCard technology={technology} />
+          {technologies
+            .filter((item) => item.isFeatured === true)
+            .map((technology) => (
+              <TechCard technology={technology} key={technology._id} />
+            ))}
         </div>
       </Section>
     </main>

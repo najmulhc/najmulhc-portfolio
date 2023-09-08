@@ -31,7 +31,7 @@ const Page = () => {
       darkLogo,
       lightLogo,
       description,
-      isFeatured,
+      
     };
     // we need to send the tech object to the server.
     const response = await postTechnology(newTech); reset();

@@ -6,12 +6,25 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const TechCard = ({ technology
 }) => {
-  const { name, logo, type, description } = technology;
+  const { name, lightLogo, darkLogo, type, description } = technology;
   return (
     <Card>
       <CardInner>
         <div className="flex justify-start items-center gap-2 mb-4">
-          <Image src={logo} width={64} height={64} alt="html logo" />
+          <Image
+            className="dark:block hidden"
+            src={darkLogo}
+            width={64}
+            height={64}
+            alt="html logo"
+          />
+          <Image
+            className="block dark:hidden"
+            src={lightLogo}
+            width={64}
+            height={64}
+            alt="html logo"
+          />
           <div>
             <H3>{name}</H3>
             <Badge>{type}</Badge>
