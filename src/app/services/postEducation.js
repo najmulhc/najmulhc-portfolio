@@ -1,6 +1,6 @@
 const postEducation = async (body) => {
   try {
-    const response = await fetch("http://localhost:3000/api/education", {
+    const response = await fetch("http:///0/api/education", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -8,10 +8,8 @@ const postEducation = async (body) => {
       body: JSON.stringify(body),
     });
 
- 
-      const data = await response.json();
-      console.log(data);
- 
+    const data = await response.json();
+    console.log(data);
   } catch (error) {
     console.error("An error occurred:", error);
   }

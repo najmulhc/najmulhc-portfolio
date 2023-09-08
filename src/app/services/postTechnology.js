@@ -1,6 +1,6 @@
 const postTechnology = async (body) => {
   try {
-    const response = await fetch("http://localhost:3000/api/technologies", {
+    const response = await fetch("http:///0/api/technologies", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
