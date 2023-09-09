@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 const dbconnect = async () => {
   try {
-    if(!mongoose.connection.readyState){
+    if(!mongoose?.connection?.readyState){
     await mongoose
-      .connect(
+      ?.connect(
         "mongodb+srv://najmulhudachowdhury:ZMwX2guxAjauZMGZ@portfoliocluster.pzx1mdh.mongodb.net/?retryWrites=true&w=majority"
       );
       console.log("Connected with mongodb");

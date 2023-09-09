@@ -1,12 +1,11 @@
+import dbconnect from "../../config/dbconnect";
+import Tech from '../../models/techmodel'
+
 const getTechnologies = async () => {
-  const response = await fetch(
-    `https://https://${process.env.VERCEL_URL}/api/education/api/technologies`,
-    {
-      cache: "no-store",
-    }
-  );
-  const data = await response.json();
-  return data;
+   await dbconnect();
+   const technologies = await Tech.find();
+   console.log(technologies)
+   return technologies
 };
 
 export default getTechnologies;

@@ -30,6 +30,7 @@ export const GET = async () => {
 
 export const POST = async  (request) => {
   const input = await request.json();
+  console.log(mongoose.models)
   try { 
     await dbconnect();
     const newTech = new Tech(input);

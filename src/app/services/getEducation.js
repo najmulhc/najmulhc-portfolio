@@ -1,11 +1,11 @@
+import dbconnect from "../../config/dbconnect";
+import Education from "../../models/educationModel";
+
 const getEducation = async () => {
-  const response = await fetch(`https://${process.env.VERCEL_URL}/api/education`, {
-    cache: "no-store",
-  });
-  const data = await response.json();
-  if (data.educations) {
-    return data.educations;
-  }
+  await dbconnect();
+  const education = await Education.find();
+  console.log(education);
+  return education;
 };
 
 export default getEducation;
