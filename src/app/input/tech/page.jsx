@@ -33,7 +33,8 @@ const Page = () => {
       description,
       
     };
-     await postTechnology(newTech)
+    const result =  await postTechnology(newTech);
+    console.log(result)
   };
   return (
     <main>
