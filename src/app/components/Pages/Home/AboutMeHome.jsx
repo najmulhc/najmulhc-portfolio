@@ -13,7 +13,7 @@ const AboutMeHome = () => {
           alt="image"
         />
       </div>
-      <div className="py-[128px] gap-8">
+      <div className="py-32 gap-8">
         <Title text="About me" />
         <div className="flex flex-col justify-center gap-2">
           <P>

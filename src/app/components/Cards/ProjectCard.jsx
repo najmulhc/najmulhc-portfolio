@@ -12,7 +12,7 @@ const ProjectCard = ({project}) => {
       />
       <CardInner>
         <H3>{name}</H3>
-        <div className="w-full flex justify-between items-center mb-[8px]">
+        <div className="w-full flex justify-between items-center mb-2">
           <Badge>{type}</Badge>
           <H4>{time}</H4>
         </div>

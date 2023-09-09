@@ -4,12 +4,12 @@ import Logo from "../Logo/Logo.jsx";
 
 const Header = () => {
   return (
-    <header className="mx-[128px] flex justify-between text-3xl py-4">
-      <Link href="/"> 
+    <header className="mx-32 flex justify-between text-3xl py-4">
+      <Link href="/">
         <Logo
           width={32}
           height={32}
-          classname="fill-[#191919] dark:fill-[#d5d5d5]"
+          classname="fill-[#121926] dark:fill-[#EEF2F6]"
         />
       </Link>
       <ul className="header font-medium">

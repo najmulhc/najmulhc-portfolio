@@ -8,7 +8,7 @@ const Hero = () => {
           Welcome to my world of <br /> code and creativity
         </H1>
         <P>Dive into my journy of coding and designing.</P>
-        <Button>Download my resume</Button>
+        <Button classname="button" link="https://www.google.com.bd">Download my resume</Button>
       </div>
       {/* hero image will be here */}
     </section>
