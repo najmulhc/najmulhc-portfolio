@@ -1,7 +1,7 @@
 const postTechnology = async (body) => {
   try {
     const response = await fetch(
-      `http://https://${process.env.VERCEL_URL}/api/technologies`,
+      `http://https://${process.env.VERCEL_URL ? process.env.VERCEL_URL : process.env.VERCEL_BRANCH_URL}/api/technologies`,
       {
         method: "POST",
         headers: {
