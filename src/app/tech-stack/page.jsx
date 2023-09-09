@@ -5,7 +5,7 @@ import getTechnologies from "../services/getTechnologies";
 import Section from "../components/Section/Section";
 
 const TechStackPage = async () => {
-  const { technologies } = await getTechnologies();
+  const technologies = await getTechnologies();
   const titles = [
     { singular: "Frontend Library", plural: "Frontend Libraries" },
     { singular: "Backend Library", plural: "Backend Libraries" },

@@ -1,11 +1,8 @@
+ 
+
 const postEducation = async (body) => {
-  try {
-    const response = await fetch(
-      `http://${
-        process.env.VERCEL_URL
-          ? process.env.VERCEL_URL
-          : process.env.VERCEL_BRANCH_URL
-      }/api/education`,
+  const response = await fetch(
+      `http://localhost:3000/api/education`,
       {
         method: "POST",
         headers: {
@@ -17,9 +14,7 @@ const postEducation = async (body) => {
 
     const data = await response.json();
     console.log(data);
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
+  
 };
 
 export default postEducation;

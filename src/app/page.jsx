@@ -24,7 +24,7 @@ const HomePage = async () => {
     description:
       "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
   };
-  const { technologies } = await getTechnologies();
+  const  technologies  = await getTechnologies();
   console.log(technologies.filter((tech) => tech.isFeatured === true));
 
   return (

@@ -33,8 +33,7 @@ const Page = () => {
       description,
       
     };
-    // we need to send the tech object to the server.
-    const response = await postTechnology(newTech); reset();
+     await postTechnology(newTech)
   };
   return (
     <main>
