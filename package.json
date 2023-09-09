@@ -10,14 +10,22 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
+    "date-fns": "^2.30.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "mongodb-client-encryption": "^2.9.0",
+    "mongoose": "^7.4.5",
     "next": "13.4.19",
+    "next-pwa": "^5.6.0",
     "next-themes": "^0.2.1",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
     "react-icons": "^4.10.1",
+    "react-loader-spinner": "^5.4.5",
+    "react-loader-spinners": "^1.0.0",
+    "react-select": "^5.7.4",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {

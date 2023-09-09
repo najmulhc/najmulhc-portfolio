@@ -13,7 +13,7 @@ const ToggleThemeButton = () => {
   }
   return (
     <a
-      className="text-[20px] font-normal hover:text-[#764ABC]  "
+      className="text-2xl font-normal hover:text-[#764ABC]  "
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? <HiMoon /> : <HiSun />}

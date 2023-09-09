@@ -1,28 +1,39 @@
 import SingleType from "../components/Pages/TechStack/SingleType";
 import TechDetailCard from "../components/Cards/TechDetailCard";
-import PageTitle from '../components/PageTitle/PageTitle'
+import PageTitle from "../components/PageTitle/PageTitle";
+import getTechnologies from "../services/getTechnologies";
+import Section from "../components/Section/Section";
 
-const TechStackPage = () => {
-  const technology = {
-    name: "React",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
-    type: "Frontend Library",
-    description:
-      "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
-    time: "1 year",
-  };
+const TechStackPage = async () => {
+  const technologies = await getTechnologies();
+  const titles = [
+    { singular: "Frontend Library", plural: "Frontend Libraries" },
+    { singular: "Backend Library", plural: "Backend Libraries" },
+    { singular: "Web Language", plural: "Web Languages" },
+    { singular: "Programming Language", plural: "Programming Languages" },
+    { singular: "CSS Framework", plural: "CSS Frameworks" },
+    { singular: "Full Stack Framework", plural: "Full Stack Frameworks" },
+    { singular: "Developer Tool", plural: "Developer Tools" },
+    { singular: "Design Tool", plural: "Design Tools" },
+  ];
+
   return (
-    <main className="min-h-screen px-[128px]">
+    <main className="min-h-screen px-32">
       <PageTitle
         pageName="Tech Stack"
         description="Discover the foundation of my creations as we journey through the world of technology together. Unveil the tools and frameworks shaping my digital endeavors, reflecting a blend of innovation, expertise, and dedication."
       />
-      <SingleType type="Frontend Frameworks">
-        <div className="grid grid-cols-2 gap-4">
-          <TechDetailCard technology={technology} />
-          <TechDetailCard technology={technology} />
-        </div>
-      </SingleType>
+      {titles.map((title) => (
+        <Section key={title.singular} title={title.plural}>
+          <div className="grid grid-cols-2 gap-4">
+            {technologies
+              .filter((item) => item.type === title.singular)
+              .map((tech) => (
+                <TechDetailCard technology={tech} key={tech._id} />
+              ))}
+          </div>
+        </Section>
+      ))}
     </main>
   );
 };
