@@ -28,12 +28,12 @@ const HomePage = async () => {
   console.log(technologies.filter((tech) => tech.isFeatured === true));
 
   return (
-    <main className="px-4 md:px-32">
+    <main >
       <Hero />
       <AboutMeHome />
       <TopBanner />
       <Section title="Featured Projects">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <ProjectCard project={project} />
           <ProjectCard project={project} />
           <ProjectCard project={project} />
@@ -41,7 +41,7 @@ const HomePage = async () => {
       </Section>
       <Qoute />
       <Section title="Featured Tech">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {technologies
             .filter((item) => item.isFeatured === true)
             .map((technology) => (

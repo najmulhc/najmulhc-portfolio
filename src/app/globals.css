@@ -49,10 +49,10 @@ p.p {
 }
 
 h2.h2 {
-  @apply font-semibold text-4xl dark:text-[#EEF2F6] text-[#121926];
+  @apply font-semibold text-2xl md:text-4xl dark:text-[#EEF2F6] text-[#121926];
 }
 h3.h3 {
-  @apply font-medium text-2xl  dark:text-[#EEF2F6] text-[#121926];
+  @apply font-medium text-xl md:text-2xl  dark:text-[#EEF2F6] text-[#121926];
 }
 h4.h4,
 .h4 {
@@ -75,5 +75,5 @@ button,
   @apply w-full p-4;
 }
 section.section {
-  @apply py-32 gap-2;
+  @apply my-16 mx-4 md:mx-32 gap-2;
 }

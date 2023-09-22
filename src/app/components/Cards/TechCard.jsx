@@ -1,11 +1,10 @@
 import Card, { CardInner } from "./Card";
 import Image from "next/image";
 import Link from "next/link";
-import { P, H3, Badge} from "../Typography/Typography";
+import { P, H3, Badge } from "../Typography/Typography";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const TechCard = ({ technology
-}) => {
+const TechCard = ({ technology }) => {
   const { name, lightLogo, darkLogo, type, description } = technology;
   return (
     <Card>
@@ -32,7 +31,7 @@ const TechCard = ({ technology
         </div>
         <P>{description}</P>
         <Link
-          className="h4 flex gap-1 text-right items-center justify-end mt-2"
+          className="p font-medium flex gap-1 text-right items-center justify-end mt-2"
           href="http://www.github.com"
         >
           See Projects with {name} <FaArrowRightLong />
