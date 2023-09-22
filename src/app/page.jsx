@@ -28,7 +28,7 @@ const HomePage = async () => {
   console.log(technologies.filter((tech) => tech.isFeatured === true));
 
   return (
-    <main className="mx-32">
+    <main className="px-4 md:px-32">
       <Hero />
       <AboutMeHome />
       <TopBanner />
