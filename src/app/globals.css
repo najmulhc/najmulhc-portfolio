@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  @apply flex gap-6 items-center justify-between;
+  @apply  hidden md:flex gap-6 items-center justify-between;
 }
 
 li {
@@ -22,11 +22,11 @@ li {
 }
 
 .footer-top-container {
-  @apply flex justify-between items-end;
+  @apply flex flex-col md:flex-row items-center md:justify-between md:items-end;
 }
 
 .footer-top-right {
-  @apply flex gap-8 items-center opacity-80;
+  @apply flex gap-2 justify-center mt-4 md:gap-8 items-center flex-wrap  opacity-80;
 }
 
 p.footer-top {
@@ -34,25 +34,25 @@ p.footer-top {
 }
 
 .footer-bottom {
-  @apply flex justify-between items-center opacity-80;
+  @apply flex flex-col md:flex-row justify-between items-center opacity-80;
 }
 
 .footer-bottom-left {
-  @apply flex gap-4 text-lg;
+  @apply flex gap-2 mb-4 text-lg flex-wrap justify-center;
 }
 
 h1.h1 {
-  @apply font-semibold text-5xl text-[#155EEF] dark:text-white  ;
+  @apply font-semibold  text-3xl md:text-5xl text-[#155EEF] dark:text-white  ;
 }
 p.p {
   @apply font-normal text-base dark:text-[#cccccc] opacity-80 text-[#121926] leading-6;
 }
 
 h2.h2 {
-  @apply font-semibold text-4xl dark:text-[#EEF2F6] text-[#121926];
+  @apply font-semibold text-2xl md:text-4xl dark:text-[#EEF2F6] text-[#121926];
 }
 h3.h3 {
-  @apply font-medium text-2xl  dark:text-[#EEF2F6] text-[#121926];
+  @apply font-medium text-xl md:text-2xl  dark:text-[#EEF2F6] text-[#121926];
 }
 h4.h4,
 .h4 {
@@ -66,7 +66,7 @@ button,
   @apply text-base px-4 py-2 inline-block text-center border rounded-full text-[#EEF2F6] bg-[#121926] dark:bg-transparent hover:bg-[#EEF2F6] hover:text-[#121926] dark:hover:bg-[#EEF2F6];
 }
 .hero-text-container {
-  @apply flex flex-col justify-start items-start gap-2;
+  @apply flex flex-col  justify-start items-center md:items-start gap-2;
 }
 .card {
   @apply w-full bg-white dark:bg-[#202939];
@@ -75,5 +75,5 @@ button,
   @apply w-full p-4;
 }
 section.section {
-  @apply py-32 gap-2;
+  @apply my-16 mx-4 md:mx-32 gap-2;
 }

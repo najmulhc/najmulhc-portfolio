@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="mx-32 py-8  ">
+    <footer className="px-8 md:px-32 py-8  ">
       <div className="footer-top-container">
         <Logo
           width={64}
@@ -41,7 +41,7 @@ const Footer = () => {
           <Link href="#">Education</Link>
           <Link href="#">Contact</Link>
         </div>
-        <p className="text-base font-normal">
+        <p className="text-base font-normal text-center md:text-left">
           Designed and developed by{" "}
           <span className="text-[#764ABC]">@najmulhc</span>
         </p>

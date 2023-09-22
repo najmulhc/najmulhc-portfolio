@@ -2,7 +2,7 @@ import dbconnect from "../../config/dbconnect";
 import Tech from "../../models/techmodel";
 
 const postTechnology = async (body) => {
-   const response = await fetch(`http://localhost:3000/api/technologies`, {
+   const response = await fetch(`http://localhost:3001/api/technologies`, {
      method: "POST",
      headers: {
        "Content-Type": "application/json",
