@@ -22,11 +22,11 @@ li {
 }
 
 .footer-top-container {
-  @apply flex justify-between items-end;
+  @apply flex flex-col md:flex-row items-center md:justify-between md:items-end;
 }
 
 .footer-top-right {
-  @apply flex gap-8 items-center opacity-80;
+  @apply flex gap-2 justify-center mt-4 md:gap-8 items-center flex-wrap  opacity-80;
 }
 
 p.footer-top {
@@ -34,11 +34,11 @@ p.footer-top {
 }
 
 .footer-bottom {
-  @apply flex justify-between items-center opacity-80;
+  @apply flex flex-col md:flex-row justify-between items-center opacity-80;
 }
 
 .footer-bottom-left {
-  @apply flex gap-4 text-lg;
+  @apply flex gap-2 mb-4 text-lg flex-wrap justify-center;
 }
 
 h1.h1 {
