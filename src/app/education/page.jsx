@@ -9,7 +9,7 @@ const EducationPage = async () => {
   const types = ["Formal Education", "Coding Bootcamp", "Online Course"];
   
   return (
-    <main className="mx-32 ">
+    <main className="">
       <PageTitle
         pageName="Education"
         description="Dive into my journey of learning and growth. Discover my educational endeavors, from formal academics to intensive coding bootcamps and enriching online courses. This page unveils the stepping stones that have equipped me with the knowledge and skills to excel in the dynamic world of technology."
@@ -17,7 +17,7 @@ const EducationPage = async () => {
 
       {types.map((type) => (
         <Section key={type} title={type}>
-          <div className="grid grid-cols-2 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             {educations
               .filter((education) => education.type === type)
               .map((item) => (
