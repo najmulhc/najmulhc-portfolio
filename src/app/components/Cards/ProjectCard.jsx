@@ -1,5 +1,5 @@
 import Card, { CardImage, CardInner } from "./Card";
-import {Badge, H3, H4, P} from '../Typography/Typography'
+import {Badge, H2, H3, H4, P} from '../Typography/Typography'
 import Button from "../Buttons/button";
 
 const ProjectCard = ({project}) => {
@@ -11,10 +11,10 @@ const ProjectCard = ({project}) => {
         alt="Testing placeholder Imag"
       />
       <CardInner>
-        <H3>{name}</H3>
+        <H2>{name}</H2>
         <div className="w-full md:flex md:justify-between items-center mb-2">
           <Badge>{type}</Badge>
-          <H4>{time}</H4>
+          <H4 classname="text-right">{time}</H4>
         </div>
         <P>
         {description}

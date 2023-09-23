@@ -35,6 +35,7 @@ const Page = () => {
     };
     const result =  await postTechnology(newTech);
     console.log(result)
+    reset();``
   };
   return (
     <main>

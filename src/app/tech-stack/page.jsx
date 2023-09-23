@@ -18,7 +18,7 @@ const TechStackPage = async () => {
   ];
 
   return (
-    <main className="min-h-screen px-4 md:px-32">
+    <main className="min-h-screen">
       <PageTitle
         pageName="Tech Stack"
         description="Discover the foundation of my creations as we journey through the world of technology together. Unveil the tools and frameworks shaping my digital endeavors, reflecting a blend of innovation, expertise, and dedication."
