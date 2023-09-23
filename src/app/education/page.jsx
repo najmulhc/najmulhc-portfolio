@@ -17,7 +17,7 @@ const EducationPage = async () => {
 
       {types.map((type) => (
         <Section key={type} title={type}>
-          <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+          <div className="grid grid-cols-1    md:grid-cols-2 w-full">
             {educations
               .filter((education) => education.type === type)
               .map((item) => (
