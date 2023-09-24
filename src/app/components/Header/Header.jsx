@@ -1,10 +1,11 @@
 import Link from "next/link.js";
 import ToggleThemeButton from "../Buttons/toggle.jsx";
 import Logo from "../Logo/Logo.jsx";
+import MobileHeader from "./MobileHeader.jsx";
 
 const Header = () => {
   return (
-    <header className="px-4 md:px-32 flex  justify-between text-3xl py-4">
+    <header className="px-4 md:px-32 flex  justify-between text-3xl py-4 relative">
       <Link href="/">
         <Logo
           width={32}
@@ -12,6 +13,7 @@ const Header = () => {
           classname="fill-[#121926] dark:fill-[#EEF2F6]"
         />
       </Link>
+      <MobileHeader/>
       <ul className="hidden md:flex  header font-medium">
         <li>
           <Link href="/">Home</Link>
