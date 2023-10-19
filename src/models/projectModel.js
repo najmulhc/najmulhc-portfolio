@@ -5,6 +5,10 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: [true, "Project name is required."],
   },
+  shortDescription: {
+    type: String,
+    required: [true, "Project description is required."],
+  },
   description: {
     type: String,
     required: [true, "Project description is required."],
@@ -16,14 +20,7 @@ const projectSchema = new mongoose.Schema({
   repo: {
     type: String,
     required: [true, "Repository URL is required."],
-    validate: {
-      validator: (value) => {
-        // You can use a regex pattern for validation
-        const regex = /^https:\/\/github\.com\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+$/;
-        return regex.test(value);
-      },
-      message: "Invalid GitHub repository URL.",
-    },
+    
   },
   liveSite: {
     type: String,
@@ -33,14 +30,22 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: [true, "Project logo URL is required."],
   },
-  screenshot: {
-    type: String,
+  screenshots: {
+    type: [String],
     required: [true, "Add a screenshot!"],
   },
-  techStack: {
-    type: [String],
-    required: [true, "Tech stack of the project is requierd"],
-  },
+  techStack: [
+    {
+      label: {
+        type: String,
+        required: true,
+      },
+      value: {
+        type: String,
+        required: true,
+      },
+    },
+  ],
   type: {
     type: String,
     enum: ["Full Stack", "Frontend", "Backend", "CLI app"],
@@ -48,6 +53,6 @@ const projectSchema = new mongoose.Schema({
   },
 });
  
-const Project = mongoose.models.project || mongoose.model("project", projectSchema);
+const Project = mongoose.models?.project || mongoose.model("project", projectSchema);
 
-module.exports = Project
+module.exports = Project;
