@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  @apply  hidden md:flex gap-6 items-center justify-between;
+  @apply hidden md:flex gap-6 items-center justify-between;
 }
 
 li {
@@ -42,7 +42,7 @@ p.footer-top {
 }
 
 h1.h1 {
-  @apply font-semibold  text-3xl md:text-5xl text-[#155EEF] dark:text-white  ;
+  @apply font-semibold  text-3xl md:text-5xl text-[#155EEF] dark:text-white;
 }
 p.p {
   @apply font-normal text-base dark:text-[#cccccc] opacity-80 text-[#121926] leading-6;
@@ -76,4 +76,25 @@ button,
 }
 section.section {
   @apply my-16 mx-4 md:mx-32 gap-2;
+}
+
+.loading-animation {
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  from,
+  to {
+    transform: scale(3,3) rotate(90deg);
+    opacity: 0;
+
+  }
+  15%,
+  85% {
+    transform: scale(1, 1) rotate(90deg);
+    opacity: 100%;
+  }
+  50% {
+    transform: scale(1, 1) rotate(0deg);
+  }
 }

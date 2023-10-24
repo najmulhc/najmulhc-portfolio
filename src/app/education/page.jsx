@@ -6,6 +6,8 @@ import Section from "../components/Section/Section";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
+
+
 const EducationPage = async () => {
   const educations = await getEducation();
   const types = ["Formal Education", "Coding Bootcamp", "Online Course"];
