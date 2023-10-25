@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "smartslider3.com",
       },
+      {
+        protocol: "http",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 };

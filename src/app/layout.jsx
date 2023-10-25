@@ -13,11 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-[#EEF2F6] dark:bg-[#121926] min-h-screen flex flex-col justify-between bg-[url('./Background.svg')] dark:bg-[url('./BackgroundDark.svg')] bg-center bg-fixed">
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

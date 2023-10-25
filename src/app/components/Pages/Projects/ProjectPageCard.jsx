@@ -21,7 +21,7 @@ const ProjectPageCard = () => {
   return (
     <Card>
       <CardInner>
-        <div className="flex justify-start gap-4 items-end">
+        <div className="flex flex-col md:flex-row justify-start gap-4 md:items-end">
           <Image src={project.logo} alt={project.name} width={64} height={64} />
           <div className="flex justify-between items-center w-full">
             <H2>{project.name}</H2>

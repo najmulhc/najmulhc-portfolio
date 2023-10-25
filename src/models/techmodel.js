@@ -61,6 +61,6 @@ const techSchema = new mongoose.Schema({
 });
 
 const Tech =
-  mongoose.models.tech || mongoose.model("tech", techSchema);
+  mongoose?.models?.tech || mongoose.model("tech", techSchema);
 
 export default Tech;

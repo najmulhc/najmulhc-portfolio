@@ -6,6 +6,8 @@ import Qoute from "./components/Pages/Home/Qoute";
 import Section from "./components/Section/Section";
 import AboutMeHome from "./components/Pages/Home/AboutMeHome";
 import getTechnologies from "./services/getTechnologies";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const HomePage = async () => {
   const project = {
@@ -17,39 +19,37 @@ const HomePage = async () => {
     description:
       "A captivating journey through code, crafting a dynamic Full Stack Project that echoes 'a long time ago'.",
   };
-  const technology = {
-    name: "React",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
-    type: "Frontend Library",
-    description:
-      "React: The maestro of UI orchestration. It dances, animates, and keeps your user experience grooving! 💃🎵",
-  };
-  const  technologies  = await getTechnologies();
-  console.log(technologies.filter((tech) => tech.isFeatured === true));
+   
+  const technologies = await getTechnologies();
+ 
 
   return (
-    <main >
-      <Hero />
-      <AboutMeHome />
-      <TopBanner />
-      <Section title="Featured Projects">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <ProjectCard project={project} />
-          <ProjectCard project={project} />
-          <ProjectCard project={project} />
-        </div>
-      </Section>
-      <Qoute />
-      <Section title="Featured Tech">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {technologies
-            .filter((item) => item.isFeatured === true)
-            .map((technology) => (
-              <TechCard technology={technology} key={technology._id} />
-            ))}
-        </div>
-      </Section>
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <AboutMeHome />
+        <TopBanner />
+        <Section title="Featured Projects">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <ProjectCard project={project} />
+            <ProjectCard project={project} />
+            <ProjectCard project={project} />
+          </div>
+        </Section>
+        <Qoute />
+        <Section title="Featured Tech">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {technologies
+              .filter((item) => item.isFeatured === true)
+              .map((technology) => (
+                <TechCard technology={technology} key={technology._id} />
+              ))}
+          </div>
+        </Section>
+      </main>
+      <Footer/>
+    </>
   );
 };
 
