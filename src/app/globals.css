@@ -63,7 +63,7 @@ h4.h4,
 }
 button,
 .button {
-  @apply text-base px-4 py-2 inline-block text-center border rounded-full text-[#EEF2F6] bg-[#121926] dark:bg-transparent hover:bg-[#EEF2F6] hover:text-[#121926] dark:hover:bg-[#EEF2F6];
+  @apply text-base px-4 py-2 inline-block text-center border rounded-full hover:rounded-sm  text-[#EEF2F6] bg-[#121926] dark:bg-transparent hover:bg-[#EEF2F6] hover:text-[#121926] dark:hover:bg-[#EEF2F6]  transition-all duration-700;
 }
 .hero-text-container {
   @apply flex flex-col  justify-start items-center md:items-start gap-2;

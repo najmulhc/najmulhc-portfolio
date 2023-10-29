@@ -1,3 +1,4 @@
+import AnimatedCursor from "react-animated-cursor";
 import Providers from "./Providers";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -13,7 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-[#EEF2F6] dark:bg-[#121926] min-h-screen flex flex-col justify-between  bg-center bg-fixed">
-        <Providers>{children}</Providers>
+        <Providers>
+          <AnimatedCursor color="21, 94, 239" innerScale={0.8} />
+          {children}
+        </Providers>
       </body>
     </html>
   );
