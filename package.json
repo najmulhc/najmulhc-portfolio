@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
     "autoprefixer": "10.4.15",
     "date-fns": "^2.30.0",
     "eslint": "8.47.0",
@@ -23,7 +24,7 @@
     "react-animated-cursor": "^2.11.2",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.4",
-    "react-icons": "^4.10.1",
+    "react-icons": "^4.11.0",
     "react-loader-spinner": "^5.4.5",
     "react-loader-spinners": "^1.0.0",
     "react-select": "^5.7.4",

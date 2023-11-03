@@ -5,13 +5,17 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: [true, "Project name is required."],
   },
-  shortDescription: {
-    type: String,
-    required: [true, "Project description is required."],
-  },
   description: {
     type: String,
     required: [true, "Project description is required."],
+  },
+  caseStudy: {
+    type: String,
+    required: [true, "explain the case!"],
+  },
+  problemsFaced: {
+    type: [String],
+    default: [],
   },
   date: {
     type: Number,
@@ -20,7 +24,6 @@ const projectSchema = new mongoose.Schema({
   repo: {
     type: String,
     required: [true, "Repository URL is required."],
-    
   },
   liveSite: {
     type: String,
@@ -51,8 +54,13 @@ const projectSchema = new mongoose.Schema({
     enum: ["Full Stack", "Frontend", "Backend", "CLI app"],
     required: [true, "Project type is required."],
   },
+  banner: {
+    type: String,
+    required: true,
+  },
 });
- 
-const Project = mongoose.models?.project || mongoose.model("project", projectSchema);
+
+const Project =
+  mongoose.models?.project || mongoose.model("project", projectSchema);
 
 module.exports = Project;
