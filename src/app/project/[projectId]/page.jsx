@@ -1,3 +1,4 @@
+
 import {H1} from "../../components/Typography/Typography";
 import Image from 'next/image';
 import banner from './banner.png'
@@ -21,4 +22,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
