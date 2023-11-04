@@ -9,7 +9,7 @@ const Button = ({ children, onclick, type, classname, link }) => {
   if (!link) {
     return (
       <button
-        className={classname}
+        className={`button ${classname}`}
         type={type}
         onClick={onclick ? () => onclick() :  console.log(" ")}
       >
@@ -18,7 +18,7 @@ const Button = ({ children, onclick, type, classname, link }) => {
     );
   } else {
     return (
-      <Link href={link}   target="_blank" className={`${classname} `}   >
+      <Link href={link} target="_blank" className={`button ${classname}`}>
         {children}
       </Link>
     );

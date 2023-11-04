@@ -61,7 +61,7 @@ h4.h4,
 .badge {
   @apply font-normal text-sm dark:text-[#cccccc]   text-[#121926]   px-2 py-1 border border-[#121926] dark:border-[#cccccc] rounded-full inline-block;
 }
-button,
+ 
 .button {
   @apply text-base px-4 py-2 inline-block text-center border rounded-full hover:rounded-sm  text-[#EEF2F6] bg-[#121926] dark:bg-transparent hover:bg-[#EEF2F6] hover:text-[#121926] dark:hover:bg-[#EEF2F6]  transition-all duration-700;
 }
