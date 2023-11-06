@@ -5,7 +5,7 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: [true, "Project name is required."],
   },
-  description: {
+  intro: {
     type: String,
     required: [true, "Project description is required."],
   },
@@ -17,13 +17,19 @@ const projectSchema = new mongoose.Schema({
     type: [String],
     default: [],
   },
+  technicalDetails: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Number,
     required: [true, "Project date is required."],
   },
-  repo: {
+  frontendRepo: {
     type: String,
-    required: [true, "Repository URL is required."],
+  },
+  backendRepo: {
+    type: String,
   },
   liveSite: {
     type: String,

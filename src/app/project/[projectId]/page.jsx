@@ -5,8 +5,9 @@ import Header from "../../components/Header/Header";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import Button from "../../components/Buttons/button";
 import { FaEye, FaEyeDropper, FaGithub } from "react-icons/fa6";
-import Title from "../../components/Titles/Title";
 import Section from "../../components/Section/Section";
+import screenshot from "./screenshot.png";
+import Footer from "../../components/Footer/Footer";
 
 const ProjectPage = () => {
   const project = {
@@ -19,9 +20,23 @@ const ProjectPage = () => {
     problems: [
       "I needed to implement global state management in the first place. I tried Redux, but in order to use it, I needed to use client component feature. I was bit scared about the optimization in the pages but as I have explored Next.js more I saw it was not that issue for my case.",
     ],
+    screenshots: [screenshot, screenshot, screenshot],
+    technicalDetails:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis similique nihil quo est eos. Corporis minima dolor soluta. Qui voluptas facilis deserunt eveniet temporibus ipsa, illo ut impedit quisquam fugit laboriosam doloremque nostrum natus amet et eum unde minima sunt quidem minus porro! Modi vero, sint distinctio odio impedit praesentium voluptatum? Autem veniam aperiam vitae quasi optio ratione illo voluptates ad, exercitationem saepe, culpa libero. Deleniti quo vitae velit consequatur voluptatibus, nesciunt exercitationem ex quam tempora maxime cum, ipsum quia! Sequi iste cupiditate laudantium doloremque repudiandae aperiam vel magni inventore labore quis eum sapiente, perferendis, culpa quae ipsam error ad?",
+    caseStudy:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellat fugiat animi expedita quis at temporibus odit reiciendis quia blanditiis commodi similique impedit exercitationem aut! Dicta velit quas atque repellat dolore. Quibusdam expedita hic, nostrum culpa temporibus pariatur illo sunt, dolores fugiat voluptatibus maiores non laborum iusto ducimus delectus. Eius molestias nihil tempore natus illum aperiam, totam ex incidunt aspernatur! Tempora reprehenderit, unde ex at neque provident quas quam sunt similique totam atque, debitis iure reiciendis ullam laudantium praesentium suscipit minus vel enim? Cupiditate accusantium ipsa officiis dicta delectus earum est? Deleniti, nulla nesciunt deserunt blanditiis maxime suscipit atque ipsum.",
   };
-  const { name, intro, frontendRepo, backendRepo, liveSite, problems } =
-    project;
+  const {
+    name,
+    intro,
+    frontendRepo,
+    backendRepo,
+    liveSite,
+    problems,
+    screenshots,
+    technicalDetails,
+    caseStudy,
+  } = project;
   return (
     <>
       <Header />
@@ -51,34 +66,23 @@ const ProjectPage = () => {
             </span>
           </Button>
         </section>
-
+        <Section title="Screenshots">
+          <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-wrap items-center">
+            {screenshots.map((ss) => (
+              <Image
+                className="w-full h-auto"
+                src={ss}
+                alt="screenshot"
+                key={ss}
+              />
+            ))}
+          </main>
+        </Section>
         <Section title="Case study">
-          <P>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-            iste inventore maiores eius aut fuga consequuntur quod, accusantium
-            quisquam molestiae? At accusamus adipisci est labore assumenda nemo
-            illum. Animi placeat laudantium sapiente iusto id a ipsam ratione
-            dolores temporibus molestias dolorum incidunt laborum, nobis numquam
-            quibusdam. Porro quaerat soluta natus dolor voluptates? Eius
-            repellat dolor atque est suscipit blanditiis omnis reiciendis magnam
-            esse reprehenderit ut ea placeat at quo laboriosam assumenda
-            recusandae, dicta enim dolorem officiis! Tempore ipsam blanditiis
-            tenetur distinctio animi aperiam neque incidunt, quam velit
-            accusantium, maiores repellendus quia debitis nam. Laborum magni
-            dolorem vero facere, officia fugit.
-          </P>
+          <P>{caseStudy}</P>
         </Section>
         <Section title="Technical Details">
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem
-            dolorem quas laborum dignissimos fuga nemo perspiciatis officiis,
-            molestiae nam necessitatibus at eveniet totam hic doloribus numquam
-            quae ipsum asperiores recusandae! In assumenda eligendi neque saepe
-            ipsam praesentium recusandae omnis nostrum dolore, est amet atque
-            aut ab numquam illum accusamus, itaque reiciendis! Saepe rem fugiat,
-            facilis deleniti cumque ea minus porro recusandae explicabo eos
-            velit amet, quaerat voluptas commodi animi!
-          </P>
+          <P>{technicalDetails}</P>
         </Section>
         <Section title="Problems Faced">
           <article className="p">
@@ -94,6 +98,7 @@ const ProjectPage = () => {
           </article>
         </Section>
       </main>
+      <Footer />
     </>
   );
 };
