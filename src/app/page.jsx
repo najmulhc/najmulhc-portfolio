@@ -8,6 +8,7 @@ import AboutMeHome from "./components/Pages/Home/AboutMeHome";
 import getTechnologies from "./services/getTechnologies";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Project from "../models/projectModel"
 
 const HomePage = async () => {
   const project = {
@@ -21,7 +22,8 @@ const HomePage = async () => {
   };
    
   const technologies = await getTechnologies();
- 
+  const projects = await Project.find();
+  console.log(projects[0])
 
   return (
     <>
@@ -32,9 +34,8 @@ const HomePage = async () => {
         <TopBanner />
         <Section title="Featured Projects">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <ProjectCard project={project} />
-            <ProjectCard project={project} />
-            <ProjectCard project={project} />
+            <ProjectCard project={projects[0]} />
+           
           </div>
         </Section>
         <Qoute />

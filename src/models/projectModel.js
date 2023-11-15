@@ -43,24 +43,17 @@ const projectSchema = new mongoose.Schema({
     type: [String],
     required: [true, "Add a screenshot!"],
   },
-  techStack: [
-    {
-      label: {
-        type: String,
-        required: true,
-      },
-      value: {
-        type: String,
-        required: true,
-      },
-    },
-  ],
+  
   type: {
     type: String,
     enum: ["Full Stack", "Frontend", "Backend", "CLI app"],
     required: [true, "Project type is required."],
   },
   banner: {
+    type: String,
+    required: true,
+  },
+  display: {
     type: String,
     required: true,
   },

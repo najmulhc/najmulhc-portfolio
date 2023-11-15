@@ -4,6 +4,7 @@ import dbconnect from "../../../config/dbconnect";
 
 export const GET = (request) => {
   try {
+    
     return NextResponse.json({
       success: true,
       message: "Data from the backend",
