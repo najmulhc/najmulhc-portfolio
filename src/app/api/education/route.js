@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import dbconnect from "../../../config/dbconnect";
 import Education from "../../../models/educationModel";
 
-  dbconnect();
+dbconnect();
 
 export const GET = async () => {
  

@@ -4,7 +4,7 @@ import Title from "../../Titles/Title";
 
 const AboutMeHome = () => {
   return (
-    <section className="section grid grid-cols-1 gap-8 md:grid-cols-2 items-center px-8 md:px-32">
+    <section className="section grid grid-cols-1 gap-8 md:grid-cols-2 items-center ">
       <div className="flex  justify-start items-center">
         <Image
           width={340}
@@ -17,21 +17,20 @@ const AboutMeHome = () => {
         <Title text="About me" />
         <div className="flex flex-col justify-center gap-2">
           <P>
-            ident dolorem? Excepturi, esse quia unde nihil impedit soluta,
-            mollitia consequatur blanditiis beatae vero tempora. Assumenda, amet
-            debitis?
+            Hi, I'm Najmul, a web developer from Dhaka, Bangladesh! Driven by a
+            passion for solving real-world problems with code, I've been writing
+            code since 2017 and diving into JavaScript since 2021. I'm currently
+            a 3<sup>rd</sup> year <b>BBA</b> student at the{" "}
+            <b>University of Dhaka</b>, balancing my studies with learning the
+            latest web technologies like <b>React</b> and <b>Node.js</b>.
           </P>
 
           <P>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            veritatis ut voluptatem a, ipsa vero? Adipisci optio asperiores
-            necessitatibus sit, exercitationem nam placeat magnam! Ab reiciendis
-            voluptatum quasi distinctio nihil libero repellat, quia alias sunt
-            possimus quam beatae officia sit labore odio, vitae iusto!
-            Aspernatur incidunt officiis, quasi illum dolores nam illo? Delectus
-            quaerat sapiente ea quasi, natus ut provident dolorem? Excepturi,
-            esse quia unde nihil impedit soluta, mollitia consequatur blanditiis
-            beatae vero tempora. Assumenda, amet debitis?
+            What excites me most is crafting creative solutions for everyday
+            challenges. My recent project, <b>Spendser</b> (A personal finance
+            management tool), allowed me to take better financial decisions. I'm
+            always eager to learn and collaborate, so feel free to connect with
+            me if you share my passion for building a better future with code!
           </P>
         </div>
       </div>
