@@ -17,7 +17,9 @@ const ProjectPage = async ({ params }) => {
  await dbconnect();
   const projects = await Project.find();
   const project = projects.filter(item => item._id == params.projectId);
-  console.log(project)
+  console.log({
+    project: project[0]
+  })
   const {
     name,
     intro,

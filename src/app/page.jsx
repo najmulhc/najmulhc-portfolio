@@ -34,7 +34,7 @@ const HomePage = async () => {
         <TopBanner />
         <Section title="Featured Projects">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <ProjectCard project={projects[0]} />
+            <ProjectCard project={projects[1]} />
            
           </div>
         </Section>
