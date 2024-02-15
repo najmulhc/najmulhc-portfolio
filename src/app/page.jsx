@@ -33,9 +33,12 @@ const HomePage = async () => {
         <AboutMeHome />
         <TopBanner />
         <Section title="Featured Projects">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <ProjectCard project={projects[1]} />
-           
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {
+              projects.map((project) => (
+                <ProjectCard project={project} key={project._id} />
+              ))
+            }
           </div>
         </Section>
         <Qoute />
