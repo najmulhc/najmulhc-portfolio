@@ -7,19 +7,27 @@ import Button from "../../components/Buttons/button";
 import { FaEye, FaEyeDropper, FaGithub } from "react-icons/fa6";
 import Section from "../../components/Section/Section";
 import screenshot from "./screenshot.png";
-import Footer from "../../components/Footer/Footer";
-import { useRouter } from "next/navigation";
+import Footer from "../../components/Footer/Footer"; 
 import Project from "../../../models/projectModel";
 import mongoose from "mongoose";
 import dbconnect from "../../../config/dbconnect";
 
+
+export const generateMetadata = async ({params }) => {
+  await dbconnect();
+  const project = await Project.findById(params.projectId);
+  const { name, intro, banner } = project;
+  return {
+    title: name,
+    description: intro,
+    image: banner,
+  };
+}
+
 const ProjectPage = async ({ params }) => {
  await dbconnect();
-  const projects = await Project.find();
-  const project = projects.filter(item => item._id == params.projectId);
-  console.log({
-    project: project[0]
-  })
+  const project = await Project.findById(params.projectId);
+  
   const {
     name,
     intro,
@@ -30,7 +38,7 @@ const ProjectPage = async ({ params }) => {
     screenshots,
     technicalDetails, 
     caseStudy, banner
-  } = project[0];
+  } = project;
   return (
     <>
       <Header />
