@@ -1,10 +1,18 @@
-import SingleType from "../components/Pages/TechStack/SingleType";
+
 import TechDetailCard from "../components/Cards/TechDetailCard";
 import PageTitle from "../components/PageTitle/PageTitle";
 import getTechnologies from "../services/getTechnologies";
 import Section from "../components/Section/Section";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+
+export const metadata = {
+  title: "Tech Stack",
+  description:
+    "Discover the foundation of my creations as we journey through the world of technology together. Unveil the tools and frameworks shaping my digital endeavors, reflecting a blend of innovation, expertise, and dedication.",
+ 
+};
+
 
 const TechStackPage = async () => {
   const technologies = await getTechnologies();
