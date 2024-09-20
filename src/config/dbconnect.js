@@ -2,9 +2,7 @@ import mongoose from "mongoose";
 const dbconnect = async () => {
   try {
     if (!mongoose.connection.readyState) {
-      await mongoose.connect(
-        "mongodb+srv://najmulhudachowdhury:ZMwX2guxAjauZMGZ@portfoliocluster.pzx1mdh.mongodb.net/?retryWrites=true&w=majority"
-      );
+      await mongoose.connect(process.env.CONNECTION_URI);
       console.log("Connected with mongodb");
     } else {
       console.log("Mongodb already connected!");
