@@ -9,7 +9,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ className, onClick, children }) => {
   return (
     <button
-      className={`${styles.button} font-gambetta ${className}`}
+      className={`${styles.button} ${className}`}
       onClick={onClick}
     >
       {children}

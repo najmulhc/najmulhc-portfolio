@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='flex justify-center items-center min-h-screen'>
       <Button> 
-        Lorem 
+        let's talk
       </Button>
     </div>
   )
