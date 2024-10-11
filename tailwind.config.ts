@@ -9,10 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#121212",
+        background: "#0e0e0e",
         foreground: "var(--foreground)",
         primary: "#DAC5A7",
+        accent: "#0e0e0e",
         border: "rgba(218, 197, 167, 0.15)",
+        buttonBackgroundOne: "#181716",
+        buttonBorderOne: "#35312c",
+      },
+      fontFamily: {
+        "chillax-regular": ["chillax-regular"],
+        "chillax-light": ["chillax-light"],
+        gambetta: ["gambetta"],
+        "satoshi-light": ["satoshi-light"],
+        "satoshi-regular": ["satoshi-regular"],
       },
     },
   },
