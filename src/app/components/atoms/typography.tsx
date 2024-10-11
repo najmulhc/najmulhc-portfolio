@@ -1,0 +1,4 @@
+interface TypographyProps {
+    className: string, 
+      
+}
