@@ -17,6 +17,8 @@ const config: Config = {
         bgMuted: "rgba(218, 197, 167, 0.05)",
         buttonBackgroundOne: "#181716",
         buttonBorderOne: "#35312c",
+        footerBg: "#181716",
+        primaryMuted: "rgba(218, 197, 167, 0.60)",
       },
       fontFamily: {
         "chillax-regular": ["chillax-regular"],

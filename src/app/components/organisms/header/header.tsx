@@ -3,7 +3,7 @@ import NavLink from "../../molecules/header/nav-link";
 
 const Header = () => {
   return (
-    <header className="w-full flex justify-center items-center py-4 sticky-top ">
+    <header className="w-full hidden justify-center items-center py-4 sticky-top md:flex">
       <nav className="p-2  px-4 border border-border rounded-md bg-bgMuted backdrop-blur-md flex justify-between items-center gap-4 ">
         <NavLink href="/home">
         Najmulhc</NavLink>

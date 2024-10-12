@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./components/organisms/header/header";
 import "./globals.css";
+import Footer from "./components/organisms/footer/footer";
 
 export const metadata: Metadata = {
   title: "Najmul Huda Chowdhury | Meta certified professional web developer",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-background">
         <Header /> {children}
+        <Footer />
       </body>
     </html>
   );
