@@ -14,6 +14,7 @@ const config: Config = {
         primary: "#DAC5A7",
         accent: "#0e0e0e",
         border: "rgba(218, 197, 167, 0.15)",
+        bgMuted: "rgba(218, 197, 167, 0.05)",
         buttonBackgroundOne: "#181716",
         buttonBorderOne: "#35312c",
       },
