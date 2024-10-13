@@ -27,6 +27,19 @@ const config: Config = {
         "satoshi-light": ["satoshi-light"],
         "satoshi-regular": ["satoshi-regular"],
       },
+      keyframes: {
+        "loop-scroll": {
+          from: {
+            transform: "translateX(0% )",
+          },
+          to: {
+            transform: "translateX(calc(-100% - 20px))",
+          },
+        },
+      },
+      animation: {
+        "loop-scroll": "loop-scroll 30s linear infinite",
+      },
     },
   },
   plugins: [],
