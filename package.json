@@ -1,9 +1,9 @@
 {
-  "name": "my-turborepo",
-  "version": "0.0.0",
-  "private": true,
+  "name": "najmulhc-portfolio",
+  "version": "0.0.1",
+  "private": false,
   "description": "",
-  "author": "",
+  "author": "Najmul Huda Chowdhury Chayan",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "turbo run dev",
