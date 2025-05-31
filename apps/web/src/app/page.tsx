@@ -1,12 +1,11 @@
-import { P, H1 } from '@/components/ui';
+import Hero from '@/components/sections/home/hero';
+import Quotes from '@/components/sections/home/quotes';
 
 export default function Home() {
   return (
     <main className=" text-center">
-      <P>Child</P>
-      <H1>
-        Lorem ipsum dolor sit moment
-      </H1>
+      <Hero />
+      <Quotes />
     </main>
   );
 }

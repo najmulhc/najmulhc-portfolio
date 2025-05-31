@@ -17,7 +17,7 @@ const routes = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white px-4 sm:px-8 py-12 border-t border-neutral-800">
+    <footer className="w-full bg-shadow text-white px-4 sm:px-8 py-12 border-t border-neutral-800">
       <Section className=" grid grid-cols-1 sm:grid-cols-3 gap-12">
         {/* Site Info */}
         <div>

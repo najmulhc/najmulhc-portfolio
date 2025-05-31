@@ -21,6 +21,15 @@
   --chart-active-dot: #000;
   --font-syne: "Syne", sans-serif;
   --font-inter: "Inter", sans-serif;
+
+  /* 🎨 Neobrutalism Palette Additions */
+  --yellow: oklch(92% 0.18 90);           /* Left BG */
+  --mint: oklch(91% 0.07 160);            /* Right BG */
+  --purple: oklch(80% 0.25 310);          /* Highlight text */
+  --coral: oklch(72% 0.23 40);            /* CTA buttons */
+  --black: oklch(0% 0 0);                 /* Hard black */
+  --white: oklch(100% 0 0);               /* Clean white */
+  --shadow-color: oklch(10% 0.02 260);          /* Soft black */
 }
 
 .dark {
@@ -29,7 +38,7 @@
   --foreground: oklch(92.49% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(70.28% 0.1753 295.36);
-  --border: oklch(0% 0 0);
+  --border: oklch(80% 0.01 260);
   --ring: oklch(100% 0 0);
   --shadow: -4px 4px 0px 0px var(--border);
   --chart-1: #A985FF;
@@ -38,11 +47,20 @@
   --chart-4: #FF6669;
   --chart-5: #008AE5;
   --chart-active-dot: #fff;
+
+  /* 🎨 Neobrutalism Palette for Dark Mode */
+  --yellow: oklch(60% 0.14 90);
+  --mint: oklch(45% 0.07 160);
+  --purple: oklch(70% 0.23 310);
+  --coral: oklch(65% 0.2 40);
+  --black: oklch(100% 0 0);
+  --white: oklch(0% 0 0);
+  --shadow-color: oklch(80% 0.01 260);
 }
 
 @theme inline {
   --color-main: var(--main);
-  --color-background: var(--background);
+  --color-background: var(--shadow-color);
   --color-secondary-background: var(--secondary-background);
   --color-foreground: var(--foreground);
   --color-main-foreground: var(--main-foreground);
@@ -54,7 +72,14 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
- --font-syne: var(--font-syne);
+  --color-yellow: var(--yellow);
+  --color-mint: var(--mint);
+  --color-purple: var(--purple);
+  --color-coral: var(--coral);
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-shadow: var(--shadow);
+  --font-syne: var(--font-syne);
   --font-inter: var(--font-inter);
   --spacing-boxShadowX: -4px;
   --spacing-boxShadowY: 4px;
@@ -74,4 +99,10 @@
   h1, h2, h3, h4, h5, h6{
     @apply font-heading;
   }
+}
+
+
+.bg-pattern {
+  background-color: #ffde2b;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2300bd84' fill-opacity='0.22'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }

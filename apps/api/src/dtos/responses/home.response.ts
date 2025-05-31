@@ -16,7 +16,7 @@ export class HeroData {
 
   @Expose()
   @IsString()
-  cta: string;
+  ctaText: string;
 
   @Expose()
   @IsUrl()

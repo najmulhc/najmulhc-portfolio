@@ -9,7 +9,8 @@ export class CreateHeroSectionDto {
   @MinLength(3)
   ctaText: string;
 
-  @IsUrl()
+  @IsString()
+  @MinLength(3)
   ctaUrl: string;
 }
 

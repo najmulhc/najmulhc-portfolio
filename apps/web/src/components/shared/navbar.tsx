@@ -41,7 +41,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="border-b-4 ">
+    <nav className="border-b-4 bg-white">
       <Section className="  flex justify-between items-center">
         <div>
           <Button className="bg-white w-12 h-12 p-3">
@@ -82,7 +82,7 @@ const Navbar = () => {
                     )}
                   >
                     <Link
-                      className="border-none hover:border"
+                      className="border-none hover:bg- hover:border"
                       href={route.href}
                     >
                       <H4 className="">{route.name}</H4>
