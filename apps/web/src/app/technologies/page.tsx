@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 const TechnologiesPage = async () => {
   metadata.title = 'custom title from component';
-  const { data } = await axios.get('http://localhost:3001/tech-stack');
+  const { data } = await axios.get(process.env.NEXT_PUBLIC_BASE_URL +'/tech-stack');
   console.log(data);
   return (
     <>

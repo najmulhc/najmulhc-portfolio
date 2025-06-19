@@ -41,7 +41,7 @@ import {
       type: 'postgres',
       database: 'neondb',
       host: 'ep-hidden-dew-a11ht0uf-pooler.ap-southeast-1.aws.neon.tech',
-      port: parseInt(process.env.PORT, 10) || 5432,
+      port:  5432,
       username: 'neondb_owner',
       password: 'npg_zO1iHKXQTh7D',
       entities: [__dirname + '/entities/**/*.entity{.ts,.js}'],
@@ -81,7 +81,7 @@ import {
     TechStackController,
   ],
   providers: [
-    
+
     TechService,
     ProjectService,
     ExperienceService,

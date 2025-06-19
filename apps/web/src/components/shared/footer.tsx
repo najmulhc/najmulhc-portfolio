@@ -1,8 +1,6 @@
-'use client';
 
+import { H3, H4, P } from '@/components/ui/typography';
 import Link from 'next/link';
-import { H2, H3, H4, P } from '@/components/ui/typography';
-import { Github, GithubIcon } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa6';
 import { FiMail } from 'react-icons/fi';

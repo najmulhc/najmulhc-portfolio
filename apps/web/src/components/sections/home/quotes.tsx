@@ -5,7 +5,9 @@ import axios from 'axios';
 import { FaQuoteLeft } from 'react-icons/fa6';
 
 const Quotes = async () => {
-  const { data } = await axios.get('http://localhost:3001/home/quote');
+  const { data } = await axios.get(
+    process.env.NEXT_PUBLIC_BASE_URL + '/home/quote',
+  );
   const { quote } = data;
   return (
     <Section className="w-full h-[60vh] flex items-center justify-center flex-col gap-2 relative bg-mint">

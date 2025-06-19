@@ -6,8 +6,10 @@ import axios from 'axios';
 import Link from 'next/link';
 
 const Hero = async () => {
-  const { data } = await axios.get('http://localhost:3001/home/hero');
+  const { data } = await axios.get(process.env.NEXT_PUBLIC_BASE_URL+'/home/hero');
   const { hero } = data;
+  console.log(hero);
+
   return (
     <Section className="w-full h-[80vh] flex items-center justify-center flex-col  gap-2  relative  bg-pattern">
       <Star8
@@ -18,7 +20,7 @@ const Hero = async () => {
       />
       <H1 align='center'>{hero.tagline}</H1>
       <Link href={hero.ctaUrl} className="pointer">
-        <Button>{hero.ctaText}</Button>
+        <Button>{hero?.ctaText}</Button>
       </Link>
       <Star26
         color="var(--mint)"

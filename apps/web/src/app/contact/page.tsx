@@ -1,8 +1,7 @@
-import { H1 } from "@/components/ui"
-
-const ContactPage = () => {
+export default function ContactPage() {
   return (
-    <H1>There is the contact page </H1>
-  )
+    <div className="flex items-center justify-center h-screen">
+      <h1 className="text-3xl font-bold">Contact Page</h1>
+    </div>
+  );
 }
-export default ContactPage

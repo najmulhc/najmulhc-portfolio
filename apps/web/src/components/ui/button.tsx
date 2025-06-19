@@ -37,7 +37,7 @@ function Button({
   className,
   variant,
   size,
-  asChild = false,
+  asChild = false, 
   ...props
 }: React.ComponentProps<'button'> &
   VariantProps<typeof buttonVariants> & {
@@ -45,18 +45,15 @@ function Button({
   }) {
   const Comp = asChild ? Slot : 'button';
 
-  const { key, ref, disabled , form, formAction } = props;
+  const { disabled } = props;
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       disabled={disabled}
-      key={key}
-      ref={ref}
-      form={form}
-      formAction={formAction}
-
+      {...props}
     />
+
   );
 }
 
