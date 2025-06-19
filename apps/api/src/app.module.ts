@@ -1,14 +1,15 @@
-import { Module } from "@nestjs/common";
-import { TypeOrmModule } from "@nestjs/typeorm";
-import { AppController } from "./controllers/app.controller";
+import { Module } from '@nestjs/common';
+import { APP_GUARD } from '@nestjs/core';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import {
-  AdminTechController,
-  AdminProjectController,
-  AdminExperienceController,
-  AdminEducationController,
   AdminContactController,
+  AdminEducationController,
+  AdminExperienceController,
   AdminHomeController,
-} from "./controllers/admin";
+  AdminProjectController,
+  AdminTechController,
+} from './controllers/admin';
+import { AppController } from './controllers/app.controller';
 import {
   ContactController,
   EducationController,
@@ -16,33 +17,37 @@ import {
   HomeController,
   ProjectsController,
   TechStackController,
-} from "./controllers/user";
-import { Tech } from "./entities/tech.entity";
-import { Project } from "./entities/project.entity";
-import { ProblemSolution } from "./entities/problem-solution.entity";
-import { Experience } from "./entities/experience.entity";
-import { Education, OnlineCourse } from "./entities/education.entity";
-import { ContactMethod } from "./entities/contact.entity";
-import { HeroSection, KeyStats, AboutMe, Quote } from "./entities/home.entity";
+} from './controllers/user';
+import { ContactMethod } from './entities/contact.entity';
+import { Education, OnlineCourse } from './entities/education.entity';
+import { Experience } from './entities/experience.entity';
+import { AboutMe, HeroSection, KeyStats, Quote } from './entities/home.entity';
+import { ProblemSolution } from './entities/problem-solution.entity';
+import { Project } from './entities/project.entity';
+import { Tech } from './entities/tech.entity';
+import { AdminGuard } from './guards';
 import {
-  TechService,
-  ProjectService,
-  ExperienceService,
-  EducationService,
   ContactService,
+  EducationService,
+  ExperienceService,
   HomeService,
-} from "./services";
-import { AdminGuard } from "./guards";
-import { APP_GUARD } from "@nestjs/core";
+  ProjectService,
+  TechService,
+} from './services';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: "sqlite",
-      database: process.env.DB_PATH || "portfolio.sqlite",
-      entities: [__dirname + "/entities/**/*.entity{.ts,.js}"],
-      synchronize: process.env.NODE_ENV !== "production",
-      logging: process.env.NODE_ENV !== "production",
+      type: 'postgres',
+      database: 'neondb',
+      host: 'ep-hidden-dew-a11ht0uf-pooler.ap-southeast-1.aws.neon.tech',
+      port: parseInt(process.env.PORT, 10) || 5432,
+      username: 'neondb_owner',
+      password: 'npg_zO1iHKXQTh7D',
+      entities: [__dirname + '/entities/**/*.entity{.ts,.js}'],
+      synchronize: true,
+      logging: true,
+      ssl: {},
     }),
     TypeOrmModule.forFeature([
       Tech,
@@ -76,11 +81,13 @@ import { APP_GUARD } from "@nestjs/core";
     TechStackController,
   ],
   providers: [
+    
     TechService,
     ProjectService,
     ExperienceService,
     EducationService,
     ContactService,
+
     HomeService,
     {
       provide: APP_GUARD,

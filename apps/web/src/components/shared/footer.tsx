@@ -64,7 +64,7 @@ export default function Footer() {
               <FaLinkedin />
             </Link>
             <Link
-              href="mailto:najmul@example.com"
+              href="mailto:najmulhc@outlook.com "
               className="hover:text-white text-neutral-400"
             >
               <FiMail />
@@ -82,7 +82,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="mt-12 border-t border-neutral-800 pt-6 text-center text-xs text-neutral-500">
-        &copy; {new Date().getFullYear()} najmulhc. All rights reserved.
+        &copy; {new Date().getFullYear()} <strong>Najmul Huda Chowdhury</strong>. All rights reserved.
       </div>
     </footer>
   );

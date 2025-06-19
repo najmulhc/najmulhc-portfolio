@@ -6,12 +6,12 @@
 :root {
   --background: oklch(93.88% 0.033 300.19);
   --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
+  --foreground: oklch(10% 0.02 260);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(70.28% 0.1753 295.36);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
+  --border: oklch(10% 0.02 260);
+  --ring: oklch(10% 0.02 260);
+  --overlay: oklch(10% 0.02 260 / 0.8);
   --shadow: -4px 4px 0px 0px var(--border);
   --chart-1: #A985FF;
   --chart-2: #00D696;

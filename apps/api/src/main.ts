@@ -21,6 +21,8 @@ async function bootstrap() {
   // Enable exception filter globally
   app.useGlobalFilters(new HttpExceptionFilter());
 
+  // add configmodule to the app
+  
   // Enable CORS
   app.enableCors();
   await app.listen(process.env.PORT || 3001);
