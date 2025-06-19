@@ -36,7 +36,7 @@ export class AdminGuard implements CanActivate {
     }
 
     const [username, password] = Buffer.from(credentials, "base64")
-      .toString("utf-8")
+      ?.toString("utf-8")
       .split(":");
 
     const isValidAdmin =
