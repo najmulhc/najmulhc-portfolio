@@ -24,8 +24,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^14.2.30",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "^15.3.4",
     "prettier": "^3.2.5",
     "turbo": "^2.5.3"
   },

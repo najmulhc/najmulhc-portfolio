@@ -45,11 +45,17 @@ function Button({
   }) {
   const Comp = asChild ? Slot : 'button';
 
+  const { key, ref, disabled , form, formAction } = props;
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
-      {...props}
+      disabled={disabled}
+      key={key}
+      ref={ref}
+      form={form}
+      formAction={formAction}
+
     />
   );
 }

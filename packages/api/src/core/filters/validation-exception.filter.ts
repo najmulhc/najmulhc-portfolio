@@ -31,7 +31,7 @@ export class ValidationExceptionFilter implements ExceptionFilter {
     errors: string[] | ValidationError[],
   ): Record<string, string[]> {
     if (!Array.isArray(errors)) {
-      return { general: [errors.toString()] };
+      return { general: [errors] };
     }
 
     // If errors are already strings, return them in a general errors array
