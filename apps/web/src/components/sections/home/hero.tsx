@@ -5,10 +5,13 @@ import Section from '@/components/ui/section';
 import axios from 'axios';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 const Hero = async () => {
-  const { data } = await axios.get(process.env.NEXT_PUBLIC_BASE_URL+'/home/hero');
-  const { hero } = data;
-  console.log(hero);
+  const { data } = await axios.get(
+    process.env.NEXT_PUBLIC_BASE_URL + '/home/hero',
+  );
+  const { hero } = data; 
 
   return (
     <Section className="w-full h-[80vh] flex items-center justify-center flex-col  gap-2  relative  bg-pattern">
@@ -18,7 +21,7 @@ const Hero = async () => {
         stroke="var(--border)"
         className="absolute   left-4 top-6 "
       />
-      <H1 align='center'>{hero.tagline}</H1>
+      <H1 align="center">{hero.tagline}</H1>
       <Link href={hero.ctaUrl} className="pointer">
         <Button>{hero?.ctaText}</Button>
       </Link>
