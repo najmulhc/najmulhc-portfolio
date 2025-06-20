@@ -7,13 +7,7 @@ export default function Home() {
     <main className=" text-center ">
       <Hero />
       <Stats />
-      {/* about  */}
-      {/* experience (if any )  */}
-      {/* projects  */}
       <Quotes />
-      {/* technologies/tech st   */}
-
-      {/* contracts   */}
     </main>
   );
 }
